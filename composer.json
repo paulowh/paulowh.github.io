@@ -1,0 +1,6 @@
+{
+  "require": {
+    "php": ">=7.0",
+    "components/jquery": "^3.6"
+  }
+}
