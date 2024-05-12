@@ -4,3 +4,4 @@ sitemap.xml
 node_modules
 vendor
 .idea
+.vscode
