@@ -1002,9 +1002,9 @@ section .container {
 }
 
 .contact .info-box i.bx {
-  font-size: 24px;
+  font-size: 22px;
   color: #1843d2;
-  border-radius: 50%;
+  border-radius: 25%;
   padding: 14px;
   float: left;
   background: rgba(255, 255, 255, 0.1);
