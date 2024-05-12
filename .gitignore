@@ -2,6 +2,5 @@ storage
 error_log
 sitemap.xml
 node_modules
-vendor
 .idea
 .vscode
