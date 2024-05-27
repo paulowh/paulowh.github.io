@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#home {
+    height: 100vh;
+    background: linear-gradient(rgba(44, 40, 40, 0.514), rgba(48, 42, 42, 0.5)), url(img/background1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 100px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    font-family: 'Croissant One', cursive;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: 0.6s ease;
+}
+
+.menu ul li a:hover,
+.menu ul li .link-ativo {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#home main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+}
+
+#home h1 {
+    font-family: 'Croissant One', cursive;
+    font-size: 170px;
+    color: #acd4ac;
+
+}
+
+#sobre {
+    height: 100vh;
+    background: linear-gradient(rgba(44, 40, 40, 0.514), rgba(48, 42, 42, 0.5)), url(img/background-sobre.jpg);
+    background-size: cover;
+    background-position: calc(100vw / 2) 0;
+    background-repeat: no-repeat;
+}
+
+#sobre h1 {
+    font-family: 'Croissant One', cursive;
+    font-size: 75px;
+    color: #2a382a;
+}
+
+#servicos h1 {
+    font-family: 'Croissant One', cursive;
+    font-size: 75px;
+    color: white;
+}
+
+#sobre h1 span,
+#servicos h1 span {
+    font-size: 100px;
+    font-family: 'Croissant One', cursive;
+    margin-left: 5%;
+    color: black;
+}
+
+#contato h1 {
+    font-family: 'Croissant One', cursive;
+    font-size: 75px;
+    color: #2a382a;
+}
+
+#contato h1 span {
+    font-size: 100px;
+    font-family: 'Croissant One', cursive;
+    margin-left: 5%;
+    color: white;
+}
+
+#sobre main p {
+    font-family: 'Inclusive Sans', sans-serif;
+
+    /* margin-left: 10%;
+    margin-bottom: 5px;
+    margin-right: 40%; */
+
+    /* top, right, bottom, left */
+    margin: 0 40% 5px 10%;
+    font-size: 18px;
+    color: black;
+    line-height: 22px;
+    /*espaçamento entre linhas*/
+
+}
+
+#servicos {
+    height: 100vh;
+    background: linear-gradient(rgba(44, 40, 40, 0.514), rgba(48, 42, 42, 0.5)), url(img/background-muda.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#servicos .fotos {
+    width: 180px;
+    height: 180px;
+}
+
+#servicos main {
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#servicos figure {
+    margin: 30px;
+    text-align: center;
+    padding: 5px;
+    background-color: #0a9b3a;
+    border-radius: 15px;
+    width: 250px;
+    cursor: pointer;
+
+}
+
+#servicos figure img {
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#servicos figcaption h3 {
+    color: white;
+    font-size: 24px;
+}
+
+#servicos figcaption p.valor {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#servicos figcaption p.valor span {
+    color: black;
+    font-size: 18px;
+    font-weight: inherit;
+}
+
+#servicos figcaption p {
+    color: white;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+
+#contato {
+    height: 100vh;
+    background: linear-gradient(rgba(44, 40, 40, 0.514), rgba(48, 42, 42, 0.5)), url(img/background-sobre.jpg);
+    background-size: cover;
+    background-position: calc((100vw / 2) * -1) 0;
+    background-repeat: no-repeat;
+}
+
+#contato main {
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contato form {
+    flex: 1;
+    max-width: 400px;
+    margin-left: 2vw;
+    padding: 20px;
+}
+
+#contato label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#contato input[type="text"],
+#contato input[type="email"],
+#contato input[type="number"],
+#contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#contato textarea {
+    resize: vertical;
+}
+
+/* Estilos para o botão */
+#contato input[type="submit"] {
+    background-color: #4CAF50;
+    /* Cor verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    /* Alinhar à direita */
+}
+
+#contato iframe {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#contato .maps h3 {
+    color: white;
+    font-size: 35px;
+
+}
+#contato .maps p{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
