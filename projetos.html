@@ -100,9 +100,10 @@
                         `;
                         $('#cards-container').append(cardHtml);
 
+                        var last = $('.field').last()
                         lang.forEach(element => {
-                            var last = $('.field').last()
-                            last.append(`<span class="ui green label">${element}</span>`)
+                            var teste = `<span class="ui green label">${element}</span>`
+                            last.append(teste)
                         });
 
                     });
