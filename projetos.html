@@ -79,10 +79,6 @@
                             }
                         })
                         const tecnologia = ''
-                        
-                        lang.forEach(element => {
-                            tecnologia += `<span class="ui green label">${element}</span>`
-                        });
 
                         const cardHtml = `
                         <div class="card">
@@ -93,7 +89,7 @@
                             <div class="description card-description">
                                 ${item.description != null ? item.description : 'projeto desenvolvido para estudos logicos'}
                             </div>
-                            <div class="field">
+                            <div class="field" id="field">
                                 ${tecnologia}
                             </div>
                         </div>
@@ -103,6 +99,12 @@
                         </div>
                         `;
                         $('#cards-container').append(cardHtml);
+
+                        lang.forEach(element => {
+                            var last = $('.field').last()
+                            last.append(`<span class="ui green label">${element}</span>`)
+                        });
+
                     });
                 },
                 error: function () {
