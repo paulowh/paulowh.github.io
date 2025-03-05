@@ -71,11 +71,8 @@
                             method: 'GET',
                             success: (langs) => {
                                 Object.keys(langs).forEach(lang => {
-                                    if (lang != '') {
-                                        language += `
-                                            <span class="ui green label">${lang}</span>
-                                        `
-                                    }
+                                    language += `<span class="ui green label">${lang}</span>`
+                                    
                                 });
                             },
                             error: () => {
