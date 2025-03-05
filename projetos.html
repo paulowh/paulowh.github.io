@@ -65,20 +65,25 @@
                         return new Date(b.updated_at) - new Date(a.updated_at);
                     });
                     data.forEach(function (item) {
-                        let language = ''
+                        const lang = []
                         $.ajax({
                             url: item.languages_url,
                             method: 'GET',
                             success: (langs) => {
-                                Object.keys(langs).forEach(lang => {
-                                    language.append(`<span class="ui green label">${lang}</span>`)
-                                    
+                                Object.keys(langs).forEach(l => {
+                                    lang.push(l)
                                 });
                             },
                             error: () => {
                                 console.log(error)
                             }
                         })
+                        const tecnologia = ''
+                        
+                        lang.forEach(element => {
+                            tecnologia += `<span class="ui green label">${element}</span>`
+                        });
+
                         const cardHtml = `
                         <div class="card">
                         <div class="content">
@@ -89,7 +94,7 @@
                                 ${item.description != null ? item.description : 'projeto desenvolvido para estudos logicos'}
                             </div>
                             <div class="field">
-                                ${language}
+                                ${tecnologia}
                             </div>
                         </div>
                         <div class="extra content">
