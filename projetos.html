@@ -71,7 +71,7 @@
                             method: 'GET',
                             success: (langs) => {
                                 Object.keys(langs).forEach(lang => {
-                                    language += `<span class="ui green label">${lang}</span>`
+                                    language.append(`<span class="ui green label">${lang}</span>`)
                                     
                                 });
                             },
