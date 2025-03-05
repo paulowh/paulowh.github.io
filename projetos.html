@@ -15,11 +15,14 @@
             line-clamp: 2;
             overflow: hidden;
             text-overflow: ellipsis;
+            height: 3rem;
         }
+
         body {
             background-color: #f6f8fa;
             margin-top: 2rem;
         }
+
         @media screen and (min-width: 768px) {
             body {
                 display: flex;
@@ -28,6 +31,16 @@
                 height: 100vh;
                 margin: 0;
             }
+        }
+
+        .content-body {
+            padding: 1em 1em 0.3em 1em !important;
+        }
+
+        .field {
+            height: 40px;
+            display: flex;
+            align-items: flex-end;
         }
     </style>
 </head>
@@ -52,21 +65,41 @@
                         return new Date(b.updated_at) - new Date(a.updated_at);
                     });
                     data.forEach(function (item) {
+                        let language = ''
+                        $.ajax({
+                            url: item.languages_url,
+                            method: 'GET',
+                            success: (langs) => {
+                                Object.keys(langs).forEach(lang => {
+                                    if (lang != '') {
+                                        language += `
+                                            <span class="ui green label">${lang}</span>
+                                        `
+                                    }
+                                });
+                            },
+                            error: () => {
+                                console.log(error)
+                            }
+                        })
                         const cardHtml = `
-                    <div class="card">
-                    <div class="content">
-                        <div class="header">${item.name}</div>
-                    </div>
-                    <div class="content">
-                        <div class="description card-description">
-                            ${item.description != null ? item.description : 'projeto desenvolvido para estudos logicos'}
+                        <div class="card">
+                        <div class="content">
+                            <div class="header">${item.name}</div>
                         </div>
-                    </div>
-                    <div class="extra content">
-                        <a href="${item.html_url}" target="_blank" class="ui button">Abrir projeto</a>
-                    </div>
-                </div>
-                `;
+                        <div class="content content-body">
+                            <div class="description card-description">
+                                ${item.description != null ? item.description : 'projeto desenvolvido para estudos logicos'}
+                            </div>
+                            <div class="field">
+                                ${language}
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a href="${item.html_url}" target="_blank" class="ui button">Abrir projeto</a>
+                        </div>
+                        </div>
+                        `;
                         $('#cards-container').append(cardHtml);
                     });
                 },
