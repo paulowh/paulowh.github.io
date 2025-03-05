@@ -55,65 +55,66 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 
     <script>
-
         $(document).ready(function () {
+            async function getLanguages(url) {
+                return new Promise((resolve, reject) => {
+                    $.ajax({
+                        url: url,
+                        method: 'GET',
+                        success: (langs) => {
+                            resolve(Object.keys(langs));
+                        },
+                        error: (error) => {
+                            console.log(error);
+                            reject(error);
+                        }
+                    });
+                });
+            }
             $.ajax({
                 url: 'https://api.github.com/users/paulowh/repos',
                 method: 'GET',
-                success: function (data) {
+                success: async function (data) {
                     data.sort(function (a, b) {
                         return new Date(b.updated_at) - new Date(a.updated_at);
                     });
-                    data.forEach(function (item) {
-                        const lang = []
-                        $.ajax({
-                            url: item.languages_url,
-                            method: 'GET',
-                            success: (langs) => {
-                                Object.keys(langs).forEach(l => {
-                                    lang.push(l)
-                                });
-                            },
-                            error: () => {
-                                console.log(error)
-                            }
-                        })
-                        const tecnologia = ''
+                    for (let item of data) {
+
+                        let lang = await getLanguages(item.languages_url);
 
                         const cardHtml = `
                         <div class="card">
-                        <div class="content">
-                            <div class="header">${item.name}</div>
-                        </div>
-                        <div class="content content-body">
-                            <div class="description card-description">
-                                ${item.description != null ? item.description : 'projeto desenvolvido para estudos logicos'}
+                            <div class="content">
+                                <div class="header">${item.name}</div>
                             </div>
-                            <div class="field" id="field">
-                                ${tecnologia}
+                            <div class="content content-body">
+                                <div class="description card-description">
+                                    ${item.description != null ? item.description : 'Projeto desenvolvido para estudos lógicos'}
+                                </div>
+                                <div class="field">
+                                    <!-- Linguagens serão adicionadas aqui -->
+                                </div>
                             </div>
-                        </div>
-                        <div class="extra content">
-                            <a href="${item.html_url}" target="_blank" class="ui button">Abrir projeto</a>
-                        </div>
+                            <div class="extra content">
+                                <a href="${item.html_url}" target="_blank" class="ui button">Abrir projeto</a>
+                            </div>
                         </div>
                         `;
+
                         $('#cards-container').append(cardHtml);
 
-                        var last = $('.field').last()
+                        var lastField = $('.field').last();
                         lang.forEach(element => {
-                            var teste = `<span class="ui green label">${element}</span>`
-                            last.append(teste)
+                            var label = `<span class="ui green label">${element}</span>`;
+                            lastField.append(label);
                         });
-
-                    });
+                    }
                 },
                 error: function () {
                     alert('Erro ao carregar os dados da API');
                 }
             });
         });
-
     </script>
 
 </body>
