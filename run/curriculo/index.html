@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Currículo - Paulo Santos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script>
+        window.onload = function () {
+            // Trigger automático do download
+            const link = document.createElement('a');
+            link.href = 'curriculo-paulo.pdf'; // nome do seu arquivo PDF
+            link.download = 'Curriculo-PauloSantos.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+    <style>
+        body {
+            background: #f6f8fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body class="ui inverted segment" style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+
+    <div class="ui center aligned container">
+        <h2 class="ui header">Paulo Santos</h2>
+        <p class="ui small header">Download automático do currículo sendo iniciado.<br>Se não iniciar, clique no botão
+            abaixo.</p>
+
+        <a href="curriculo-paulo.pdf" download="Curriculo-PauloSantos.pdf" class="ui black large button">
+            <i class="download icon"></i>
+            Baixar Currículo Manualmente
+        </a>
+    </div>
+
+</body>
+
+</html>
