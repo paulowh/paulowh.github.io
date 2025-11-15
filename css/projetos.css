@@ -1,0 +1,303 @@
+/* Tela de Loading */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: flex;
+    /* Inicialmente visível */
+}
+
+.loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 3rem;
+}
+
+body {
+    background-color: #eef2f6;
+    margin: 0;
+    /* usar margem pelo wrapper */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Estilo geral mais "sistema" e elegante */
+body,
+html {
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #1f2937;
+}
+
+
+.navbar .brand {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.navbar .home-btn:hover {
+    background: #0f1724;
+    color: #fff;
+    border-color: transparent;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 24px rgba(2, 6, 23, 0.16);
+}
+
+/* main-wrapper consolidated further down */
+
+/* Cards com aparência mais limpa */
+.ui.cards .card {
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(15, 23, 42, 0.04);
+    overflow: hidden;
+    background: #ffffff;
+    transition: transform .14s ease, box-shadow .14s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+    /* garante altura consistente entre cards */
+}
+
+.ui.cards .card:hover {
+    /* hover desativado: manter aparência igual ao estado normal */
+    transform: none;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+/* Anchor cards: make the whole card a link without decoration and ensure layout works */
+.ui.cards a.card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.ui.cards a.card .content {
+    flex: 0 0 auto;
+}
+
+.ui.cards a.card .content.content-body {
+    flex: 1 1 auto;
+}
+
+.ui.cards a.card:hover {
+    text-decoration: none;
+}
+
+/* Ensure likes count and star icon are neatly aligned */
+.ui.cards .card .likes {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.ui.cards .card .likes .likes-count {
+    font-weight: 700;
+    color: #475569;
+}
+
+.ui.cards .card .header {
+    font-weight: 600;
+    color: #0f1724;
+}
+
+/* Força o content-body a ocupar espaço e empurra o extra (botão) para a base do card */
+.ui.cards .card .content-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Centraliza a área extra e cria divisor visual consistente */
+.ui.cards .card .extra.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(15, 23, 42, 0.04);
+    padding: 0.9rem;
+}
+
+/* Botão neutro e outline dentro do card */
+.ui.bottom.attached.button.attached-button {
+    display: block;
+    width: 100%;
+    border-radius: 0 0 10px 10px !important;
+    padding: 0.8rem 1rem !important;
+    background: #0f1724 !important;
+    color: #fff !important;
+    text-align: center;
+    font-weight: 700;
+    border-top: 1px solid rgba(15, 23, 42, 0.06) !important;
+    /* divider line */
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.08);
+}
+
+
+/* estrela em tom neutro */
+.neutral-star {
+    color: #94a3b8 !important;
+}
+
+/* Extra meta (likes + updated row) */
+.ui.cards .card .extra.content .extra-meta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+    color: #475569;
+    font-weight: 600;
+}
+
+
+
+.ui.cards .card .extra.content .extra-action {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Labels de tecnologia: padronizadas */
+.tech-label {
+    border-radius: 999px !important;
+    font-weight: 600;
+    padding: 0.35rem 0.6rem !important;
+    font-size: 0.8rem !important;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06) inset;
+}
+
+/* Classe para readme (renderizado) */
+.card-readme {
+    padding: 0.2rem 0;
+}
+
+/* Ajustes mobile para layout mais compacto */
+@media screen and (max-width: 480px) {
+    .ui.cards {
+        margin: 0 -0.5rem;
+    }
+
+    .main-wrapper {
+        margin: 0.8rem auto;
+    }
+}
+
+/* Navbar and page wrapper */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.8rem 1.5rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-clip: padding-box;
+}
+
+/* navbar brand styling consolidated above */
+
+.navbar a.home-btn {
+    margin-left: auto;
+}
+
+.main-wrapper {
+    max-width: 1100px;
+    margin: 1.5rem auto;
+    /* margem no começo da página */
+    padding: 0 1rem;
+    /* compensar a navbar fixa para que o conteúdo não fique escondido */
+    padding-top: 4.5rem;
+    /* ajuste razoável; altere se desejar */
+}
+
+@media screen and (min-width: 768px) {
+
+    /* manter apenas margem padrão em desktop */
+    body {
+        margin: 0;
+    }
+}
+
+.content-body {
+    padding: 1em 1em 0.3em 1em !important;
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    /* permite que as labels quebrem para a próxima linha */
+    gap: 0.4rem;
+    /* espaço entre labels */
+    align-items: center;
+    height: auto;
+    /* remove altura fixa para evitar overflow */
+    margin-top: 0.5rem;
+    min-width: 0;
+    /* garante que o card possa encolher em layouts estreitos */
+}
+
+/* Ajustes para melhorar o comportamento das labels dentro do card */
+.field .ui.label {
+    margin: 0.15rem 0.25rem 0.15rem 0;
+    white-space: nowrap;
+    /* manter o texto da label em uma linha para evitar cortes estranhos */
+}
+
+/* Permite quebra de palavras nas áreas de conteúdo quando necessário */
+.card {
+    min-width: 0;
+}
+
+.card .content {
+    overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 480px) {
+    .field .ui.label {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.4rem;
+    }
+
+    .card .header {
+        font-size: 1rem;
+    }
+
+    .content-body {
+        padding: 0.75em 0.8em 0.5em 0.8em !important;
+    }
+}

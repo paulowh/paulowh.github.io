@@ -1,5 +1,5 @@
-// Node script to generate data/repos.json for GitHub Pages
-// Usage: GITHUB_TOKEN must be provided in env (the Action sets it automatically)
+// Script Node para gerar data/repos.json para o GitHub Pages
+// Uso: GITHUB_TOKEN deve ser fornecido nas variáveis de ambiente (a Action já define automaticamente)
 
 const fs = require('fs');
 const path = require('path');
@@ -50,7 +50,7 @@ async function fetchLanguages(url) {
   }
 }
 
-// NOTE: fetchReadme removed — README is not included in the static JSON to reduce API calls.
+// OBS: fetchReadme removido — o README não é incluído no JSON estático para reduzir chamadas à API.
 
 (async () => {
   try {
@@ -65,7 +65,7 @@ async function fetchLanguages(url) {
 
     for (const r of repos) {
       const languages = await fetchLanguages(r.languages_url);
-  // not fetching README here to keep the generator fast and small
+      // não buscamos README aqui para manter o gerador rápido e leve
       out.repos.push({
         name: r.name,
         description: r.description,
@@ -76,7 +76,7 @@ async function fetchLanguages(url) {
       });
     }
 
-    // Ensure out dir exists
+    // Garante que o diretório de saída exista
     try { fs.mkdirSync(OUT_DIR, { recursive: true }); } catch (e) { }
 
     fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 2), 'utf8');
