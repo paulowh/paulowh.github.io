@@ -10,7 +10,7 @@ const OUT_FILE = path.join(OUT_DIR, 'repos.json');
 const TOKEN = process.env.GITHUB_TOKEN;
 
 if (!TOKEN) {
-  console.error('GITHUB_TOKEN not provided in env');
+  console.error('GITHUB_TOKEN não foi fornecido nas variáveis de ambiente');
   process.exit(1);
 }
 
@@ -28,7 +28,7 @@ async function fetchAllRepos() {
   while (true) {
     const url = `https://api.github.com/users/${OWNER}/repos?per_page=${per_page}&page=${page}`;
     const res = await fetch(url, { headers: HEADERS });
-    if (!res.ok) throw new Error(`Failed to fetch repos: ${res.status}`);
+    if (!res.ok) throw new Error(`Falha ao buscar repositórios: ${res.status}`);
     const data = await res.json();
     repos.push(...data);
     if (data.length < per_page) break;
@@ -45,16 +45,18 @@ async function fetchLanguages(url) {
     const obj = await res.json();
     return Object.keys(obj || {});
   } catch (e) {
-    console.error('Error fetching languages for', url, e.message);
+    console.error('Erro ao buscar linguagens em', url, e.message);
     return [];
   }
 }
 
+// NOTE: fetchReadme removed — README is not included in the static JSON to reduce API calls.
+
 (async () => {
   try {
-    console.log('Fetching repos for', OWNER);
+    console.log('Buscando repositórios de', OWNER);
     const repos = await fetchAllRepos();
-    console.log(`Found ${repos.length} repos`);
+    console.log(`Encontrados ${repos.length} repositórios`);
 
     const out = {
       generated_at: new Date().toISOString(),
@@ -63,6 +65,7 @@ async function fetchLanguages(url) {
 
     for (const r of repos) {
       const languages = await fetchLanguages(r.languages_url);
+  // not fetching README here to keep the generator fast and small
       out.repos.push({
         name: r.name,
         description: r.description,
@@ -77,9 +80,9 @@ async function fetchLanguages(url) {
     try { fs.mkdirSync(OUT_DIR, { recursive: true }); } catch (e) { }
 
     fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 2), 'utf8');
-    console.log('Wrote', OUT_FILE);
+    console.log('Arquivo gravado em', OUT_FILE);
   } catch (err) {
-    console.error('Failed to generate JSON:', err);
+    console.error('Falha ao gerar JSON:', err);
     process.exit(1);
   }
 })();
