@@ -1,11 +1,13 @@
 {
-  "generated_at": "2025-11-15T21:54:49.875Z",
+  "generated_at": "2025-11-15T21:57:01.896Z",
   "repos": [
     {
       "name": "automatic-journey",
       "description": "automatic journey",
       "html_url": "https://github.com/paulowh/automatic-journey",
+      "languages_url": "https://api.github.com/repos/paulowh/automatic-journey/languages",
       "language": "CSS",
+      "stargazers_count": 0,
       "languages": [
         "CSS",
         "PHP",
@@ -17,7 +19,9 @@
       "name": "box-sala",
       "description": "um blog para a sala de TI26",
       "html_url": "https://github.com/paulowh/box-sala",
+      "languages_url": "https://api.github.com/repos/paulowh/box-sala/languages",
       "language": "HTML",
+      "stargazers_count": 0,
       "languages": [
         "HTML",
         "CSS",
@@ -29,7 +33,9 @@
       "name": "campo-minado",
       "description": "Jogo feito para a ultima avaliação de Python II",
       "html_url": "https://github.com/paulowh/campo-minado",
+      "languages_url": "https://api.github.com/repos/paulowh/campo-minado/languages",
       "language": "Python",
+      "stargazers_count": 0,
       "languages": [
         "Python"
       ],
@@ -39,7 +45,9 @@
       "name": "comex",
       "description": null,
       "html_url": "https://github.com/paulowh/comex",
+      "languages_url": "https://api.github.com/repos/paulowh/comex/languages",
       "language": "Java",
+      "stargazers_count": 0,
       "languages": [
         "Java",
         "HTML",
@@ -51,7 +59,9 @@
       "name": "exercicios-js-o-retorno",
       "description": null,
       "html_url": "https://github.com/paulowh/exercicios-js-o-retorno",
+      "languages_url": "https://api.github.com/repos/paulowh/exercicios-js-o-retorno/languages",
       "language": "HTML",
+      "stargazers_count": 0,
       "languages": [
         "HTML",
         "JavaScript"
@@ -62,7 +72,9 @@
       "name": "gatoBob",
       "description": null,
       "html_url": "https://github.com/paulowh/gatoBob",
+      "languages_url": "https://api.github.com/repos/paulowh/gatoBob/languages",
       "language": "HTML",
+      "stargazers_count": 0,
       "languages": [
         "HTML"
       ],
@@ -72,7 +84,9 @@
       "name": "gerenciador-de-aulas",
       "description": "projeto integrador da UC 12",
       "html_url": "https://github.com/paulowh/gerenciador-de-aulas",
+      "languages_url": "https://api.github.com/repos/paulowh/gerenciador-de-aulas/languages",
       "language": "PHP",
+      "stargazers_count": 0,
       "languages": [
         "PHP",
         "TSQL",
@@ -86,7 +100,9 @@
       "name": "paulowh",
       "description": null,
       "html_url": "https://github.com/paulowh/paulowh",
+      "languages_url": "https://api.github.com/repos/paulowh/paulowh/languages",
       "language": null,
+      "stargazers_count": 4,
       "languages": [],
       "updated_at": "2025-10-10T00:29:30Z"
     },
@@ -94,19 +110,23 @@
       "name": "paulowh.github.io",
       "description": null,
       "html_url": "https://github.com/paulowh/paulowh.github.io",
+      "languages_url": "https://api.github.com/repos/paulowh/paulowh.github.io/languages",
       "language": "HTML",
+      "stargazers_count": 11,
       "languages": [
         "HTML",
         "JavaScript",
         "CSS"
       ],
-      "updated_at": "2025-11-15T21:51:43Z"
+      "updated_at": "2025-11-15T21:56:41Z"
     },
     {
       "name": "petshop-react",
       "description": "Repositório feito para o acompanhamento das aulas de React JS",
       "html_url": "https://github.com/paulowh/petshop-react",
+      "languages_url": "https://api.github.com/repos/paulowh/petshop-react/languages",
       "language": "JavaScript",
+      "stargazers_count": 0,
       "languages": [
         "JavaScript",
         "CSS",
@@ -118,7 +138,9 @@
       "name": "pokeapi",
       "description": null,
       "html_url": "https://github.com/paulowh/pokeapi",
+      "languages_url": "https://api.github.com/repos/paulowh/pokeapi/languages",
       "language": "Twig",
+      "stargazers_count": 1,
       "languages": [
         "Twig",
         "PHP",
@@ -131,7 +153,9 @@
       "name": "police-box",
       "description": "Modelo de projeto",
       "html_url": "https://github.com/paulowh/police-box",
+      "languages_url": "https://api.github.com/repos/paulowh/police-box/languages",
       "language": "PHP",
+      "stargazers_count": 0,
       "languages": [
         "PHP",
         "CSS",
@@ -145,7 +169,9 @@
       "name": "portfolio",
       "description": null,
       "html_url": "https://github.com/paulowh/portfolio",
+      "languages_url": "https://api.github.com/repos/paulowh/portfolio/languages",
       "language": "JavaScript",
+      "stargazers_count": 0,
       "languages": [
         "JavaScript",
         "CSS",
@@ -157,7 +183,9 @@
       "name": "RoomBox",
       "description": "projeto desenvolvido com o objetivo de gerenciar e reservar salas para uso",
       "html_url": "https://github.com/paulowh/RoomBox",
+      "languages_url": "https://api.github.com/repos/paulowh/RoomBox/languages",
       "language": "PHP",
+      "stargazers_count": 2,
       "languages": [
         "PHP",
         "Hack",
@@ -171,7 +199,9 @@
       "name": "sistema-criptografia",
       "description": "Sistema com o objetivo de codificar uma mensagem",
       "html_url": "https://github.com/paulowh/sistema-criptografia",
+      "languages_url": "https://api.github.com/repos/paulowh/sistema-criptografia/languages",
       "language": "Python",
+      "stargazers_count": 0,
       "languages": [
         "Python"
       ],
@@ -181,7 +211,9 @@
       "name": "TI21",
       "description": "Repositório feito para a UC 15 da turma TI21",
       "html_url": "https://github.com/paulowh/TI21",
+      "languages_url": "https://api.github.com/repos/paulowh/TI21/languages",
       "language": "C#",
+      "stargazers_count": 6,
       "languages": [
         "C#",
         "PHP",
@@ -197,7 +229,9 @@
       "name": "TI24",
       "description": null,
       "html_url": "https://github.com/paulowh/TI24",
+      "languages_url": "https://api.github.com/repos/paulowh/TI24/languages",
       "language": "PHP",
+      "stargazers_count": 19,
       "languages": [
         "PHP",
         "CSS",
@@ -211,7 +245,9 @@
       "name": "TI26",
       "description": "repositório das aulas da turma técnico em informática ti26",
       "html_url": "https://github.com/paulowh/TI26",
+      "languages_url": "https://api.github.com/repos/paulowh/TI26/languages",
       "language": "HTML",
+      "stargazers_count": 1,
       "languages": [
         "HTML",
         "PHP",
@@ -224,7 +260,9 @@
       "name": "TI27",
       "description": "repositório para compartilhar arquivos de aula com a turma",
       "html_url": "https://github.com/paulowh/TI27",
+      "languages_url": "https://api.github.com/repos/paulowh/TI27/languages",
       "language": "HTML",
+      "stargazers_count": 0,
       "languages": [
         "HTML",
         "CSS"
