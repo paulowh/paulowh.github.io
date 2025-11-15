@@ -20,12 +20,13 @@
             justify-content: center;
             align-items: center;
             z-index: 9999;
-            display: flex; /* Inicialmente visível */
+            display: flex;
+            /* Inicialmente visível */
         }
 
         .loading-spinner {
-            border: 4px solid #f3f3f3; 
-            border-top: 4px solid #3498db; 
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -33,8 +34,13 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .card-description {
@@ -49,15 +55,44 @@
 
         body {
             background-color: #f6f8fa;
-            margin-top: 2rem;
+            margin: 0;
+            /* usar margem pelo wrapper */
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Navbar and page wrapper */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            padding: 0.6rem 1rem;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .navbar .brand {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .navbar a.home-btn {
+            margin-left: auto;
+        }
+
+        .main-wrapper {
+            max-width: 1100px;
+            margin: 1.5rem auto;
+            /* margem no começo da página */
+            padding: 0 1rem;
         }
 
         @media screen and (min-width: 768px) {
+
+            /* manter apenas margem padrão em desktop */
             body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
                 margin: 0;
             }
         }
@@ -67,9 +102,48 @@
         }
 
         .field {
-            height: 40px;
             display: flex;
-            align-items: flex-end;
+            flex-wrap: wrap;
+            /* permite que as labels quebrem para a próxima linha */
+            gap: 0.4rem;
+            /* espaço entre labels */
+            align-items: center;
+            height: auto;
+            /* remove altura fixa para evitar overflow */
+            margin-top: 0.5rem;
+            min-width: 0;
+            /* garante que o card possa encolher em layouts estreitos */
+        }
+
+        /* Ajustes para melhorar o comportamento das labels dentro do card */
+        .field .ui.label {
+            margin: 0.15rem 0.25rem 0.15rem 0;
+            white-space: nowrap;
+            /* manter o texto da label em uma linha para evitar cortes estranhos */
+        }
+
+        /* Permite quebra de palavras nas áreas de conteúdo quando necessário */
+        .card {
+            min-width: 0;
+        }
+
+        .card .content {
+            overflow-wrap: anywhere;
+        }
+
+        @media screen and (max-width: 480px) {
+            .field .ui.label {
+                font-size: 0.75rem;
+                padding: 0.25rem 0.4rem;
+            }
+
+            .card .header {
+                font-size: 1rem;
+            }
+
+            .content-body {
+                padding: 0.75em 0.8em 0.5em 0.8em !important;
+            }
         }
     </style>
 </head>
@@ -81,7 +155,15 @@
         <div class="loading-spinner"></div>
     </div>
 
-    <div class="ui three stackable cards container" id="cards-container" style="display: none;">
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="brand">Projetos</div>
+        <a class="ui button home-btn" href="./index.html">Voltar (Home)</a>
+    </header>
+
+    <div class="main-wrapper">
+        <div class="ui three stackable cards container" id="cards-container" style="display: none;">
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -89,73 +171,204 @@
 
     <script>
         $(document).ready(function () {
-            async function getLanguages(url) {
-                return new Promise((resolve, reject) => {
-                    $.ajax({
-                        url: url,
-                        method: 'GET',
-                        success: (langs) => {
-                            resolve(Object.keys(langs));
-                        },
-                        error: (error) => {
-                            console.log(error);
-                            reject(error);
-                        }
+            // ---------- Configurações para reduzir consumo da API ----------
+            const MAX_CONCURRENT = 4; // máximo de requisições simultâneas
+            let activeRequests = 0;
+            const requestQueue = [];
+
+            function enqueueRequest(resolver) {
+                requestQueue.push(resolver);
+            }
+
+            function dequeueNext() {
+                if (requestQueue.length > 0 && activeRequests < MAX_CONCURRENT) {
+                    const next = requestQueue.shift();
+                    next();
+                }
+            }
+
+            // Faz a chamada AJAX respeitando o limite de concorrência e cache em sessionStorage
+            async function limitedAjax(url) {
+                const cacheKey = 'langs:' + url;
+                try {
+                    const cached = sessionStorage.getItem(cacheKey);
+                    if (cached) return JSON.parse(cached);
+                } catch (e) {
+                    // ignore cache errors
+                }
+
+                // Espera pela vez se o limite estiver alcançado
+                if (activeRequests >= MAX_CONCURRENT) {
+                    await new Promise(res => enqueueRequest(res));
+                }
+
+                activeRequests++;
+                try {
+                    const langs = await new Promise((resolve, reject) => {
+                        $.ajax({ url: url, method: 'GET', success: resolve, error: reject });
                     });
-                });
+                    const keys = Object.keys(langs);
+                    try { sessionStorage.setItem(cacheKey, JSON.stringify(keys)); } catch (e) { }
+                    return keys;
+                } catch (err) {
+                    console.log('Erro ao buscar linguagens:', err);
+                    return [];
+                } finally {
+                    activeRequests--;
+                    dequeueNext();
+                }
+            }
+
+            // Retorna as linguagens (usando limitedAjax)
+            async function getLanguages(url) {
+                if (!url) return [];
+                return await limitedAjax(url);
             }
 
             // Mostrar a tela de loading
             $('#loading-overlay').show();
 
-            $.ajax({
-                url: 'https://api.github.com/users/paulowh/repos',
-                method: 'GET',
-                success: async function (data) {
-                    data.sort(function (a, b) {
-                        return new Date(b.updated_at) - new Date(a.updated_at);
-                    });
-                    for (let item of data) {
+            // Helper: adiciona labels ao elemento jQuery $field
+            function appendLabels($field, list) {
+                if (!list || list.length === 0) return;
+                list.forEach(element => {
+                    const label = `<span class="ui green label">${element}</span>`;
+                    $field.append(label);
+                });
+            }
 
-                        let lang = await getLanguages(item.languages_url);
+            // Carrega linguagens para um card (usado pelo observer)
+            async function loadLanguagesForCard($card) {
+                const url = $card.data('langs-url');
+                const $field = $card.find('.field');
+                if (!$field.data('langs-loaded')) {
+                    // Mostrar linguagem primária se disponível (já adicionada ao HTML ao montar)
+                    const langs = await getLanguages(url);
+                    appendLabels($field, langs);
+                    $field.data('langs-loaded', true);
+                }
+            }
 
-                        const cardHtml = `
-                        <div class="card">
-                            <div class="content">
-                                <div class="header">${item.name}</div>
+            // Primeiro tenta carregar o JSON gerado em /data/repos.json (gerado pela Action)
+            async function tryLoadFromJson() {
+                try {
+                    const res = await fetch('/data/repos.json', { cache: 'no-cache' });
+                    if (!res.ok) return null;
+                    const json = await res.json();
+                    if (!json || !Array.isArray(json.repos)) return null;
+                    return json;
+                } catch (e) {
+                    return null;
+                }
+            }
+
+            // Monta cards a partir do objeto JSON gerado pela Action
+            function buildFromJson(json) {
+                const repos = json.repos || [];
+                repos.forEach(item => {
+                    const labels = (item.languages || []).map(l => `<span class="ui green label">${l}</span>`).join('');
+                    const primaryLang = item.language ? `<span class="ui teal label">${item.language}</span>` : '';
+
+                    const cardHtml = `
+                    <div class="card">
+                        <div class="content">
+                            <div class="header">${item.name}</div>
+                        </div>
+                        <div class="content content-body">
+                            <div class="description card-description">
+                                ${item.description != null ? item.description : 'Projeto desenvolvido para estudos lógicos'}
                             </div>
-                            <div class="content content-body">
-                                <div class="description card-description">
-                                    ${item.description != null ? item.description : 'Projeto desenvolvido para estudos lógicos'}
-                                </div>
-                                <div class="field">
-                                    <!-- Linguagens serão adicionadas aqui -->
-                                </div>
-                            </div>
-                            <div class="extra content">
-                                <a href="${item.html_url}" target="_blank" class="ui button">Abrir projeto</a>
+                            <div class="field">
+                                ${primaryLang}${labels}
                             </div>
                         </div>
-                        `;
+                        <div class="extra content">
+                            <a href="${item.html_url}" target="_blank" class="ui button">Abrir projeto</a>
+                        </div>
+                    </div>
+                    `;
 
-                        $('#cards-container').append(cardHtml);
+                    $('#cards-container').append(cardHtml);
+                });
 
-                        var lastField = $('.field').last();
-                        lang.forEach(element => {
-                            var label = `<span class="ui green label">${element}</span>`;
-                            lastField.append(label);
-                        });
-                    }
-                    $('#cards-container').show();
-                    $('#loading-overlay').fadeOut();
-                    $
-                },
+                $('#cards-container').show();
+                $('#loading-overlay').fadeOut();
+            }
 
-                error: function () {
-                    alert('Erro ao carregar os dados da API');
-                    $('#loading-overlay').fadeOut();
+            (async () => {
+                const json = await tryLoadFromJson();
+                if (json) {
+                    // Usar o JSON estático — evita chamadas à API do GitHub em runtime
+                    buildFromJson(json);
+                    return;
                 }
-            });
+
+                // Se não encontrou JSON, fallback para o comportamento anterior (consulta GitHub com lazy-load)
+                $.ajax({
+                    url: 'https://api.github.com/users/paulowh/repos',
+                    method: 'GET',
+                    success: function (data) {
+                        data.sort(function (a, b) {
+                            return new Date(b.updated_at) - new Date(a.updated_at);
+                        });
+
+                        // Monta os cards sem fazer muitas requisições ainda
+                        data.forEach(item => {
+                            // usa item.language (linguagem primária) como label inicial se existir
+                            const primaryLang = item.language ? `<span class="ui teal label">${item.language}</span>` : '';
+
+                            const cardHtml = `
+                            <div class="card" data-langs-url="${item.languages_url}">
+                                <div class="content">
+                                    <div class="header">${item.name}</div>
+                                </div>
+                                <div class="content content-body">
+                                    <div class="description card-description">
+                                        ${item.description != null ? item.description : 'Projeto desenvolvido para estudos lógicos'}
+                                    </div>
+                                    <div class="field">
+                                        ${primaryLang}
+                                    </div>
+                                </div>
+                                <div class="extra content">
+                                    <a href="${item.html_url}" target="_blank" class="ui button">Abrir projeto</a>
+                                </div>
+                            </div>
+                            `;
+
+                            $('#cards-container').append(cardHtml);
+                        });
+
+                        $('#cards-container').show();
+                        $('#loading-overlay').fadeOut();
+
+                        // Lazy-load das linguagens quando o card estiver visível
+                        const cards = document.querySelectorAll('#cards-container .card');
+                        if ('IntersectionObserver' in window) {
+                            const observer = new IntersectionObserver((entries, obs) => {
+                                entries.forEach(entry => {
+                                    if (entry.isIntersecting) {
+                                        const cardEl = entry.target;
+                                        loadLanguagesForCard($(cardEl));
+                                        obs.unobserve(cardEl);
+                                    }
+                                });
+                            }, { rootMargin: '200px' });
+
+                            cards.forEach(c => observer.observe(c));
+                        } else {
+                            // Fallback: carregar linguagens apenas para os primeiros 8 cards
+                            for (let i = 0; i < Math.min(8, cards.length); i++) {
+                                loadLanguagesForCard($(cards[i]));
+                            }
+                        }
+                    },
+                    error: function () {
+                        alert('Erro ao carregar os dados da API');
+                        $('#loading-overlay').fadeOut();
+                    }
+                });
+            })();
         });
     </script>
 
