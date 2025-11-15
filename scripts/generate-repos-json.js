@@ -70,7 +70,9 @@ async function fetchLanguages(url) {
         name: r.name,
         description: r.description,
         html_url: r.html_url,
+        languages_url: r.languages_url,
         language: r.language,
+        stargazers_count: r.stargazers_count,
         languages: languages,
         updated_at: r.updated_at
       });
