@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-16T00:15:39.135Z",
+  "generated_at": "2025-11-16T06:05:28.917Z",
   "repos": [
     {
       "name": "automatic-journey",
@@ -60,10 +60,14 @@
       "description": "DevBox é um hub pessoal de produtividade que reúne tarefas, notas, wiki e serviços modulares em um único sistema unificado.",
       "html_url": "https://github.com/paulowh/DevBox",
       "languages_url": "https://api.github.com/repos/paulowh/DevBox/languages",
-      "language": null,
+      "language": "JavaScript",
       "stargazers_count": 0,
-      "languages": [],
-      "updated_at": "2025-11-15T23:50:01Z"
+      "languages": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "updated_at": "2025-11-16T05:36:57Z"
     },
     {
       "name": "exercicios-js-o-retorno",
@@ -128,7 +132,7 @@
         "JavaScript",
         "CSS"
       ],
-      "updated_at": "2025-11-15T22:24:39Z"
+      "updated_at": "2025-11-16T00:15:45Z"
     },
     {
       "name": "petshop-react",
