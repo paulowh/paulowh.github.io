@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-17T06:05:45.404Z",
+  "generated_at": "2025-11-17T12:06:05.389Z",
   "repos": [
     {
       "name": "automatic-journey",
@@ -64,10 +64,10 @@
       "stargazers_count": 0,
       "languages": [
         "JavaScript",
-        "HTML",
-        "CSS"
+        "CSS",
+        "HTML"
       ],
-      "updated_at": "2025-11-17T05:59:42Z"
+      "updated_at": "2025-11-17T09:34:59Z"
     },
     {
       "name": "exercicios-js-o-retorno",
@@ -132,7 +132,7 @@
         "JavaScript",
         "CSS"
       ],
-      "updated_at": "2025-11-17T00:15:03Z"
+      "updated_at": "2025-11-17T06:05:52Z"
     },
     {
       "name": "petshop-react",
