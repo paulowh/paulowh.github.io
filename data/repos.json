@@ -1,34 +1,6 @@
 {
-  "generated_at": "2025-11-17T18:04:38.823Z",
+  "generated_at": "2025-11-18T00:14:52.926Z",
   "repos": [
-    {
-      "name": "automatic-journey",
-      "description": "automatic journey",
-      "html_url": "https://github.com/paulowh/automatic-journey",
-      "languages_url": "https://api.github.com/repos/paulowh/automatic-journey/languages",
-      "language": "CSS",
-      "stargazers_count": 0,
-      "languages": [
-        "CSS",
-        "PHP",
-        "Twig"
-      ],
-      "updated_at": "2025-03-27T14:08:37Z"
-    },
-    {
-      "name": "box-sala",
-      "description": "um blog para a sala de TI26",
-      "html_url": "https://github.com/paulowh/box-sala",
-      "languages_url": "https://api.github.com/repos/paulowh/box-sala/languages",
-      "language": "HTML",
-      "stargazers_count": 0,
-      "languages": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "updated_at": "2025-08-06T11:10:05Z"
-    },
     {
       "name": "campo-minado",
       "description": "Jogo feito para a ultima avaliação de Python II",
@@ -83,18 +55,6 @@
       "updated_at": "2025-09-17T01:30:55Z"
     },
     {
-      "name": "gatoBob",
-      "description": null,
-      "html_url": "https://github.com/paulowh/gatoBob",
-      "languages_url": "https://api.github.com/repos/paulowh/gatoBob/languages",
-      "language": "HTML",
-      "stargazers_count": 0,
-      "languages": [
-        "HTML"
-      ],
-      "updated_at": "2025-10-10T01:06:30Z"
-    },
-    {
       "name": "gerenciador-de-aulas",
       "description": "projeto integrador da UC 12",
       "html_url": "https://github.com/paulowh/gerenciador-de-aulas",
@@ -132,7 +92,7 @@
         "JavaScript",
         "CSS"
       ],
-      "updated_at": "2025-11-17T12:06:12Z"
+      "updated_at": "2025-11-17T18:04:45Z"
     },
     {
       "name": "petshop-react",
