@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-18T12:06:00.402Z",
+  "generated_at": "2025-11-18T18:05:39.771Z",
   "repos": [
     {
       "name": "campo-minado",
@@ -39,7 +39,7 @@
         "CSS",
         "HTML"
       ],
-      "updated_at": "2025-11-17T09:34:59Z"
+      "updated_at": "2025-11-18T17:53:44Z"
     },
     {
       "name": "exercicios-js-o-retorno",
@@ -92,7 +92,7 @@
         "JavaScript",
         "CSS"
       ],
-      "updated_at": "2025-11-18T06:05:40Z"
+      "updated_at": "2025-11-18T12:06:08Z"
     },
     {
       "name": "petshop-react",
