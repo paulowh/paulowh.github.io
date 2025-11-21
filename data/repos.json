@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-20T18:05:34.440Z",
+  "generated_at": "2025-11-21T00:14:32.514Z",
   "repos": [
     {
       "name": "campo-minado",
@@ -32,14 +32,15 @@
       "description": "DevBox é um hub pessoal de produtividade que reúne tarefas, notas, wiki e serviços modulares em um único sistema unificado.",
       "html_url": "https://github.com/paulowh/DevBox",
       "languages_url": "https://api.github.com/repos/paulowh/DevBox/languages",
-      "language": "JavaScript",
+      "language": "PHP",
       "stargazers_count": 0,
       "languages": [
+        "PHP",
+        "Blade",
         "JavaScript",
-        "CSS",
-        "HTML"
+        "CSS"
       ],
-      "updated_at": "2025-11-20T07:52:22Z"
+      "updated_at": "2025-11-21T00:07:16Z"
     },
     {
       "name": "exercicios-js-o-retorno",
@@ -92,7 +93,7 @@
         "JavaScript",
         "CSS"
       ],
-      "updated_at": "2025-11-20T12:06:44Z"
+      "updated_at": "2025-11-20T18:05:42Z"
     },
     {
       "name": "petshop-react",
@@ -242,6 +243,20 @@
         "CSS"
       ],
       "updated_at": "2025-11-05T01:26:46Z"
+    },
+    {
+      "name": "_DevBox",
+      "description": "DevBox é um hub pessoal de produtividade que reúne tarefas, notas, wiki e serviços modulares em um único sistema unificado.",
+      "html_url": "https://github.com/paulowh/_DevBox",
+      "languages_url": "https://api.github.com/repos/paulowh/_DevBox/languages",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "languages": [
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ],
+      "updated_at": "2025-11-20T22:41:46Z"
     }
   ]
 }
