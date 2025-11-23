@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-23T00:16:50.325Z",
+  "generated_at": "2025-11-23T06:05:19.864Z",
   "repos": [
     {
       "name": "campo-minado",
@@ -36,11 +36,11 @@
       "stargazers_count": 0,
       "languages": [
         "PHP",
-        "Twig",
         "CSS",
+        "Twig",
         "JavaScript"
       ],
-      "updated_at": "2025-11-22T23:42:03Z"
+      "updated_at": "2025-11-23T05:51:13Z"
     },
     {
       "name": "exercicios-js-o-retorno",
@@ -93,7 +93,7 @@
         "JavaScript",
         "CSS"
       ],
-      "updated_at": "2025-11-22T18:04:40Z"
+      "updated_at": "2025-11-23T00:16:56Z"
     },
     {
       "name": "petshop-react",
