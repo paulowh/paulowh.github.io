@@ -1,0 +1,63 @@
+@import url('../font/Gilroy-Bold.ttf');
+@import url('../font/Gilroy-Light.ttf');
+@import url('../font/Gilroy-LightItalic.ttf');
+@import url('../font/Gilroy-Medium.ttf');
+
+:root {
+  --bg-primary: #D1CCD9;
+  --bg-secondary: #0F2440;
+  --bg-tertiary: #071526;
+  --fg-primary: #071526;
+  --fg-section: #D1CCD9;
+  --fg-primary-hv: #8C504A;
+  --fg-secondary-hv: #F25C5C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--fg-primary);
+  font-family: 'Arial', sans-serif;
+  padding: 15px;
+}
+
+.grid-template {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  height: calc(100vh - 30px);
+}
+
+.grid-header {
+  grid-area: 1 / 1 / 2 / 13;
+}
+
+.grid-ref {
+  grid-area: 2 / 1 / 6 / 6;
+}
+
+.grid-img {
+  grid-area: 2 / 6 / 6 / 9;
+}
+
+.grid-projects {
+  grid-area: 2 / 9 / 8 / 13;
+}
+
+.grid-about {
+  grid-area: 6 / 1 / 9 / 5;
+}
+
+.grid-contact {
+  grid-area: 6 / 5 / 9 / 9;
+}
+
+.grid-social {
+  grid-area: 8 / 9 / 9 / 13;
+}
