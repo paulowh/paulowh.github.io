@@ -2,66 +2,93 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paulo Santos | Redes Sociais</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <style>
-        body {
-            background: #f6f8fa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paulo Santos - Portfolio</title>
 
-        .content {
-            width: 100%;
-            max-width: 600px;
-            text-align: center;
-        }
-
-        a.button {
-            width: 100%;
-            font-size: 1.2em;
-            margin-bottom: 1em;
-            border-radius: 10px !important;
-            padding: 20px !important;
-        }
-
-        .ui.icon {
-            margin-right: 0.5em;
-        }
-
-        div.vertical {
-            gap: 30px;
-            width: 100%;
-            max-width: 300px;
-
-        }
-
-        p {
-            max-width: 300px;
-            margin: 10px auto;
-            word-wrap: break-word;
-        }
-    </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="content">
-        <h2 class="ui header">Paulo Santos</h2>
-        <p>Desenvolvedor FullStack apaixonado por tecnologia, com especialização em PHP, JAVA, C# e Python. </p>
-
-        <div id="social-buttons" class="ui vertical buttons">
-            <!-- Buttons will be injected from data/socials.json by js/socials.js -->
+  <main class="grid-template">
+    <header class="grid-header">
+      <div class="header-content">
+        <div class="logo">
+          <span class="name-first">PAULO</span>
+          <span class="name-last">SANTOS</span>
         </div>
-    </div>
+        <nav class="nav-menu">
+          <a href="#projects">PROJETOS</a>
+          <a href="#about">SOBRE</a>
+          <a href="#contact">CONTATO</a>
+        </nav>
+      </div>
+    </header>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    <script src="js/socials.js"></script>
+    <section class="grid-ref">
+      <div class="ref-content">
+        <h2 class="ref-title">
+          <em>Código</em> é minha linguagem,
+          <em>café</em> é meu combustível,
+          criar é meu propósito.
+        </h2>
+      </div>
+    </section>
+
+    <section class="grid-img">
+      <img src="./img/perfil.JPEG" alt="Paulo Santos" />
+    </section>
+
+    <section class="grid-projects">
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Projeto 1</h3>
+        </div>
+        <div class="project-card">
+          <h3>Projeto 2</h3>
+        </div>
+        <div class="project-card">
+          <h3>Projeto 3</h3>
+        </div>
+        <div class="project-card">
+          <h3>Projeto 4</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-about">
+      <div class="about-content">
+        <p class="about-text">
+          Minha missão é transformar conhecimento técnico em soluções reais e aplicáveis, seja no desenvolvimento de
+          sistemas robustos ou no acompanhamento pedagógico de futuros profissionais. Atuando em projetos com stacks
+          como Laravel, React, Docker e bancos de dados relacionais.
+        </p>
+      </div>
+    </section>
+
+    <section class="grid-contact">
+      <div class="contact-content">
+        <div class="contact-header">
+          <span>
+            Tem alguma <br> pergunta?
+          </span>
+          <a href="#" class="contact-link">
+            <span class="arrow">↗</span>
+          </a>
+        </div>
+        <h2>Contate-me</h2>
+      </div>
+    </section>
+
+    <section class="grid-social">
+      <div class="social-links">
+        <a href="#">INSTAGRAM</a>
+        <a href="#">GITHUB</a>
+        <a href="#">LINKEDIN</a>
+      </div>
+    </section>
+  </main>
+
 </body>
 
 </html>
