@@ -111,7 +111,7 @@
   border-radius: 15px;
   overflow: hidden;
   z-index: 30;
-  transition: all 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: all 1.2s ease-out;
   will-change: top, left, width, height;
 }
 
@@ -126,11 +126,11 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: var(--bg-card-primary);
+  background-color: transparent;
   border-radius: 15px;
   overflow: hidden;
   opacity: 0;
-  z-index: 20;
+  z-index: 1;
 }
 
 .postloader img {
@@ -206,6 +206,67 @@ body {
   }
 }
 
+/* Animações que partem da imagem */
+@keyframes slideFromImageLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40%) scale(0.3);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideFromImageRight {
+  from {
+    opacity: 0;
+    transform: translateX(-40%) scale(0.3);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideFromImageTop {
+  from {
+    opacity: 0;
+    transform: translateY(100%) scale(0.3);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slideFromImageBottom {
+  from {
+    opacity: 0;
+    transform: translateY(-100%) scale(0.3);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeInFromImage {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .grid-header,
 .grid-ref,
 .grid-img,
@@ -216,42 +277,39 @@ body {
   opacity: 0;
 }
 
-.grid-template.loaded .grid-header,
-.grid-template.loaded .grid-ref,
-.grid-template.loaded .grid-img,
-.grid-template.loaded .grid-projects,
-.grid-template.loaded .grid-about,
-.grid-template.loaded .grid-contact,
-.grid-template.loaded .grid-social {
-  animation: fadeInScale 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+.grid-template.loaded .grid-img {
+  animation: fadeInFromImage 0.6s ease-out forwards;
+  animation-delay: 0s;
 }
 
-.grid-img {
-  animation-delay: 0.1s;
-}
-
-.grid-header {
-  animation-delay: 0.2s;
-}
-
-.grid-ref {
+.grid-template.loaded .grid-header {
+  animation: slideFromImageTop 0.8s ease-out forwards;
   animation-delay: 0.3s;
 }
 
-.grid-projects {
+.grid-template.loaded .grid-ref {
+  animation: slideFromImageLeft 0.8s ease-out forwards;
   animation-delay: 0.4s;
 }
 
-.grid-about {
+.grid-template.loaded .grid-projects {
+  animation: slideFromImageRight 0.8s ease-out forwards;
   animation-delay: 0.5s;
 }
 
-.grid-contact {
+.grid-template.loaded .grid-about {
+  animation: slideFromImageLeft 0.8s ease-out forwards;
   animation-delay: 0.6s;
 }
 
-.grid-social {
+.grid-template.loaded .grid-contact {
+  animation: slideFromImageBottom 0.8s ease-out forwards;
   animation-delay: 0.7s;
+}
+
+.grid-template.loaded .grid-social {
+  animation: slideFromImageRight 0.8s ease-out forwards;
+  animation-delay: 0.8s;
 }
 
 
