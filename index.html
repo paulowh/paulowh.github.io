@@ -11,7 +11,12 @@
 
 </head>
 
-<body >
+<body>
+  <!-- Preloader: imagem centralizada que se move -->
+  <div class="preloader" data-flip-id="preloader">
+    <img src="" alt="Paulo Santos" />
+  </div>
+
   <main class="grid-template">
     <header class="grid-header">
       <div class="header-content">
@@ -38,7 +43,9 @@
     </section>
 
     <section class="grid-img">
-      <img src="./img/retrato-1.JPEG" alt="Paulo Santos" />
+      <div class="postloader" data-flip-id="postloader">
+        <img src="" alt="Paulo Santos" />
+      </div>
     </section>
 
     <section class="grid-projects">
@@ -91,6 +98,7 @@
     </section>
   </main>
 
+  <script src="js/loading.js"></script>
 </body>
 
 </html>
