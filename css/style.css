@@ -26,15 +26,72 @@
   font-style: normal;
 }
 
-:root {
-  --bg-primary: #D1CCD9;
-  --bg-secondary: #0F2440;
-  --bg-tertiary: #071526;
-  --fg-primary: #071526;
-  --fg-section: #D1CCD9;
+:root,
+[data-theme="retrato-1"],
+[data-theme="retrato-9"] {
+  --bg: #D1CCD9;
+  --bg-card-primary: #0F2440;
+  --bg-card-secondary: #071526;
+  --fg-primary: var(--bg);
   --fg-primary-hv: #8C504A;
-  --fg-secondary-hv: #F25C5C;
 }
+
+[data-theme="retrato-2"] {
+  --bg: #201C26;
+  --bg-card-primary: #D9D1BA;
+  --bg-card-secondary: #A59A85;
+  --fg-primary: var(--bg);
+  --fg-primary-hv: #A66253;
+}
+
+[data-theme="retrato-3"] {
+  --bg: #F2F1DC;
+  --bg-card-primary: #025939;
+  --bg-card-secondary: #02734A;
+  --fg-primary: var(--bg);
+  --fg-primary-hv: #D97E6A;
+}
+
+[data-theme="retrato-4"] {
+  --bg: #241C40;
+  --bg-card-primary: #B3A9D9;
+  --bg-card-secondary: #6B78BF;
+  --fg-primary: var(--bg);
+  --fg-primary-hv: #A67C84;
+}
+
+[data-theme="retrato-5"] {
+  --bg: #BCA85F;
+  --bg-card-primary: #365959;
+  --bg-card-secondary: #6D733F;
+  --fg-primary: var(--bg);
+  --fg-primary-hv: #8C5626;
+}
+
+[data-theme="retrato-6"] {
+  --bg: #A3BFB5;
+  --bg-card-primary: #F2A0A7;
+  --bg-card-secondary: #C55863;
+  --fg-primary: #252A2D;
+  --fg-primary-hv: #A61C35;
+}
+
+[data-theme="retrato-7"] {
+  --bg: #BFB4AA;
+  --bg-card-primary: #252526;
+  --bg-card-secondary: #232226;
+  --fg-primary: var(--bg);
+  --fg-primary-hv: #BF7C63;
+}
+
+[data-theme="retrato-8"] {
+  --bg: #8C7765;
+  --bg-card-primary: #35402D;
+  --bg-card-secondary: #4D5644;
+  --fg-primary: #DCD6D2;
+  --fg-primary-hv: #FFB300;
+}
+
 
 * {
   margin: 0;
@@ -42,7 +99,7 @@
 }
 
 body {
-  background-color: var(--bg-primary);
+  background-color: var(--bg);
   color: var(--fg-primary);
   font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   padding: 15px;
@@ -139,7 +196,7 @@ body {
 
 
 .grid-header {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-card-primary);
   border-radius: 15px;
   padding: 20px 30px;
 }
@@ -160,13 +217,13 @@ body {
 }
 
 .name-first {
-  color: var(--fg-section);
+  color: var(--fg-primary);
   font-weight: 300;
   font-style: italic;
 }
 
 .name-last {
-  color: var(--fg-section);
+  color: var(--fg-primary);
   font-weight: 500;
 }
 
@@ -176,7 +233,7 @@ body {
 }
 
 .nav-menu a {
-  color: var(--fg-section);
+  color: var(--fg-primary);
   text-decoration: none;
   font-size: 1rem;
   letter-spacing: 1.5px;
@@ -184,11 +241,11 @@ body {
 }
 
 .nav-menu a:hover {
-  color: var(--fg-secondary-hv);
+  color: var(--fg-primary-hv);
 }
 
 .grid-ref {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-card-primary);
   border-radius: 15px;
   padding: 40px;
   display: flex;
@@ -205,7 +262,7 @@ body {
   font-size: 3rem;
   line-height: 1.2;
   font-weight: bold;
-  color: var(--fg-section);
+  color: var(--fg-primary);
 }
 
 .title-line-2 {
@@ -227,7 +284,7 @@ body {
 }
 
 .grid-projects {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-card-primary);
   border-radius: 15px;
   padding: 30px;
   display: flex;
@@ -242,7 +299,7 @@ body {
 }
 
 .project-card {
-  background-color: var(--bg-tertiary);
+  background-color: var(--bg-card-secondary);
   border-radius: 12px;
   padding: 20px;
   flex: 1;
@@ -258,7 +315,7 @@ body {
 }
 
 .project-card h3 {
-  color: var(--fg-section);
+  color: var(--fg-primary);
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 15px;
@@ -286,13 +343,13 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  color: var(--fg-section);
+  color: var(--fg-primary);
   font-size: 20px;
   opacity: 0.6;
 }
 
 .grid-about {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-card-primary);
   border-radius: 15px;
   padding: 30px;
   display: flex;
@@ -309,14 +366,14 @@ body {
 .about-text {
   justify-content: flex-end;
   text-align: justify;
-  color: var(--fg-section);
+  color: var(--fg-primary);
   font-size: 1rem;
   line-height: 1.6;
   opacity: 0.9;
 }
 
 .grid-contact {
-  background-color: var(--bg-tertiary);
+  background-color: var(--bg-card-secondary);
   border-radius: 15px;
   padding: 40px;
 
@@ -332,7 +389,7 @@ body {
 }
 
 .contact-content {
-  color: var(--fg-section);
+  color: var(--fg-primary);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -347,11 +404,11 @@ body {
 
 .arrow {
   font-size: 2rem;
-  color: var(--fg-section);
+  color: var(--fg-primary);
 }
 
 .grid-social {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-card-primary);
   border-radius: 15px;
   padding: 20px 30px;
   display: flex;
@@ -366,7 +423,7 @@ body {
 }
 
 .social-links a {
-  color: var(--fg-section);
+  color: var(--fg-primary);
   text-decoration: none;
   font-size: 11px;
   letter-spacing: 1.5px;
@@ -374,7 +431,7 @@ body {
 }
 
 .social-links a:hover {
-  color: var(--fg-secondary-hv);
+  color: var(--fg-primary-hv);
 }
 
 /* Tablet/Notebook - 768px a 1024px */
