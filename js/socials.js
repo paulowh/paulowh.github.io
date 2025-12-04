@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const color = s.colorClass || 'black';
                 a.className = 'ui fluid ' + color + ' button';
                 a.href = s.url;
-                a.target = '_blank';
+                a.target =   s.target || '_blank';
                 a.rel = 'noopener noreferrer';
                 a.setAttribute('aria-label', (s.label || '') + ' (abre em nova aba)');
                 a.setAttribute('title', s.label || '');
