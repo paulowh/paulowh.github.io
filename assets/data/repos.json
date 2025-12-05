@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-05T00:15:14.683Z",
+  "generated_at": "2025-12-05T16:11:02.969Z",
   "repos": [
     {
       "name": "campo-minado",
@@ -86,14 +86,14 @@
       "description": null,
       "html_url": "https://github.com/paulowh/paulowh.github.io",
       "languages_url": "https://api.github.com/repos/paulowh/paulowh.github.io/languages",
-      "language": "HTML",
+      "language": "JavaScript",
       "stargazers_count": 11,
       "languages": [
-        "HTML",
         "JavaScript",
-        "CSS"
+        "CSS",
+        "HTML"
       ],
-      "updated_at": "2025-12-04T06:29:38Z"
+      "updated_at": "2025-12-05T16:10:08Z"
     },
     {
       "name": "petshop-react",
@@ -139,36 +139,6 @@
         "JavaScript"
       ],
       "updated_at": "2025-03-27T14:09:23Z"
-    },
-    {
-      "name": "portfolio",
-      "description": null,
-      "html_url": "https://github.com/paulowh/portfolio",
-      "languages_url": "https://api.github.com/repos/paulowh/portfolio/languages",
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "languages": [
-        "JavaScript",
-        "CSS",
-        "HTML"
-      ],
-      "updated_at": "2025-10-26T06:22:42Z"
-    },
-    {
-      "name": "RoomBox",
-      "description": "projeto desenvolvido com o objetivo de gerenciar e reservar salas para uso",
-      "html_url": "https://github.com/paulowh/RoomBox",
-      "languages_url": "https://api.github.com/repos/paulowh/RoomBox/languages",
-      "language": "PHP",
-      "stargazers_count": 2,
-      "languages": [
-        "PHP",
-        "Hack",
-        "HTML",
-        "Batchfile",
-        "CSS"
-      ],
-      "updated_at": "2025-09-23T14:58:50Z"
     },
     {
       "name": "sistema-criptografia",
@@ -243,20 +213,6 @@
         "CSS"
       ],
       "updated_at": "2025-12-04T18:05:05Z"
-    },
-    {
-      "name": "_DevBox",
-      "description": "DevBox é um hub pessoal de produtividade que reúne tarefas, notas, wiki e serviços modulares em um único sistema unificado.",
-      "html_url": "https://github.com/paulowh/_DevBox",
-      "languages_url": "https://api.github.com/repos/paulowh/_DevBox/languages",
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "languages": [
-        "JavaScript",
-        "CSS",
-        "HTML"
-      ],
-      "updated_at": "2025-11-20T22:41:46Z"
     }
   ]
 }
