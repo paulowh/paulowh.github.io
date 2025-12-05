@@ -4,7 +4,7 @@
     "label": "Portfólio",
     "url": "/",
     "icon": "home",
-    "colorClass": "teal",
+    "colorClass": "green",
     "target": "_self"
   },
   {
@@ -19,7 +19,7 @@
     "label": "Instagram",
     "url": "https://www.instagram.com/paulo.wh",
     "icon": "instagram",
-    "colorClass": "pink"
+    "colorClass": "purple"
   },
   {
     "id": "github",
