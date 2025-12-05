@@ -112,7 +112,8 @@
   overflow: hidden;
   z-index: 30;
   transition: all 1.2s ease-out;
-  will-change: top, left, width, height;
+  will-change: top, left, width, height, opacity;
+  opacity: 1;
 }
 
 .preloader img {
@@ -278,7 +279,8 @@ body {
 }
 
 .grid-template.loaded .grid-img {
-  animation: fadeInFromImage 0.6s ease-out forwards;
+  /* animation: fadeInFromImage 0.6s ease-out forwards; */
+  opacity: 1;
   animation-delay: 0s;
 }
 
