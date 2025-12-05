@@ -1,9 +1,9 @@
 {
-  "generated_at": "2025-12-05T22:24:53.748Z",
+  "generated_at": "2025-12-05T22:34:35.215Z",
   "repos": [
     {
       "name": "campo-minado",
-      "description": "Jogo feito para a ultima avaliação de Python II",
+      "description": "Projeto feito totalmente em Python, com o objetivo de simular um campo do jogo 'campo minado' salvado os dados em um Excel para simular um banco de dados",
       "html_url": "https://github.com/paulowh/campo-minado",
       "languages_url": "https://api.github.com/repos/paulowh/campo-minado/languages",
       "language": "Python",
@@ -11,7 +11,7 @@
       "languages": [
         "Python"
       ],
-      "updated_at": "2025-02-04T12:41:01Z"
+      "updated_at": "2025-12-05T22:34:00Z"
     },
     {
       "name": "comex",
@@ -93,7 +93,7 @@
         "CSS",
         "HTML"
       ],
-      "updated_at": "2025-12-05T22:19:05Z"
+      "updated_at": "2025-12-05T22:24:59Z"
     },
     {
       "name": "petshop-react",
