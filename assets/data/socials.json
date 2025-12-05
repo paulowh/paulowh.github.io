@@ -1,0 +1,31 @@
+[
+  {
+    "id": "portfolio",
+    "label": "Portfólio",
+    "url": "/",
+    "icon": "home",
+    "colorClass": "teal",
+    "target": "_self"
+  },
+  {
+    "id": "linkedin",
+    "label": "LinkedIn",
+    "url": "https://www.linkedin.com/in/paulowh",
+    "icon": "linkedin",
+    "colorClass": "blue"
+  },
+  {
+    "id": "instagram",
+    "label": "Instagram",
+    "url": "https://www.instagram.com/paulo.wh",
+    "icon": "instagram",
+    "colorClass": "pink"
+  },
+  {
+    "id": "github",
+    "label": "GitHub",
+    "url": "https://github.com/paulowh",
+    "icon": "github",
+    "colorClass": "black"
+  }
+]
