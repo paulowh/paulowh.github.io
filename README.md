@@ -82,7 +82,7 @@ npm install -g browser-sync
 No PowerShell, execute:
 
 ```powershell
-browser-sync start --proxy "localhost/paulowh.github.io" --files "*.html, *.css, *.js, **/*.php"
+browser-sync start --proxy "localhost/" --files "*.html, *.css, *.js, **/*.php"
 ```
 
 O projeto será aberto automaticamente em `http://localhost:3000` com **live reload** habilitado. Qualquer alteração em arquivos HTML, CSS ou JavaScript será refletida instantaneamente no navegador.

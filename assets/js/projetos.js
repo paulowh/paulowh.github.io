@@ -373,10 +373,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
 
       const title = document.createElement('h3');
-      title.textContent = repo.name || 'Projeto';
+      title.textContent = repo.name.toUpperCase() || 'Projeto';
 
       const desc = document.createElement('p');
-      const safeDescription = repo.description ? escapeHtml(repo.description) : 'Projeto desenvolvido para estudos.';
+      const safeDescription = repo.description
+        ? escapeHtml(repo.description)
+        : 'Projeto desenvolvido para estudos.';
       desc.innerHTML = safeDescription;
 
       card.appendChild(title);
