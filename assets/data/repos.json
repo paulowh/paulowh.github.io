@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-05T16:11:02.969Z",
+  "generated_at": "2025-12-05T22:24:53.748Z",
   "repos": [
     {
       "name": "campo-minado",
@@ -93,7 +93,7 @@
         "CSS",
         "HTML"
       ],
-      "updated_at": "2025-12-05T16:10:08Z"
+      "updated_at": "2025-12-05T22:19:05Z"
     },
     {
       "name": "petshop-react",
@@ -126,7 +126,7 @@
     },
     {
       "name": "police-box",
-      "description": "Modelo de projeto",
+      "description": "Modelo de projeto, marketplace de venda de jogos digitais ",
       "html_url": "https://github.com/paulowh/police-box",
       "languages_url": "https://api.github.com/repos/paulowh/police-box/languages",
       "language": "PHP",
@@ -138,7 +138,7 @@
         "Hack",
         "JavaScript"
       ],
-      "updated_at": "2025-03-27T14:09:23Z"
+      "updated_at": "2025-12-05T22:17:01Z"
     },
     {
       "name": "sistema-criptografia",
