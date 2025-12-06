@@ -4,16 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Paulo Santos </title>
 
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="/assets/img/favicon/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32.png">
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon/favicon-48.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/favicon-192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/favicon-512.png">
+  <link rel="icon" href="/assets/img/favicon/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/favicon-180.png">
+
+  <title>Portfolio | Paulo Santos </title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+
   <script src="assets/js/theme.js"></script>
 
 </head>
@@ -31,10 +39,24 @@
           <span class="name-first">PAULO</span>
           <span class="name-last">SANTOS</span>
         </div>
-        <nav class="nav-menu">
-          <a href="/projetos">PROJETOS</a>
-          <a href="https://github.com/paulowh/paulowh/wiki">WIKI</a>
-          <a href="/contato">CONTATO</a>
+        <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/projetos">PROJETOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/paulowh/paulowh/wiki">WIKI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contato">CONTATO</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
