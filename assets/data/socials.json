@@ -3,7 +3,7 @@
     "id": "portfolio",
     "label": "Portfólio",
     "url": "/",
-    "icon": "home",
+    "icon": "house-fill",
     "colorClass": "green",
     "target": "_self"
   },

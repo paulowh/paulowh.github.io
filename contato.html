@@ -4,71 +4,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato | Paulo Santos</title>
-  <link rel="icon" href="/assets/img/favicon/favicon.ico">
+
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32.png">
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon/favicon-48.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/favicon-192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon/favicon-512.png">
+  <link rel="icon" href="/assets/img/favicon/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/favicon-180.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+  <title>Contato | Paulo Santos</title>
+
+  <link rel="stylesheet" href="./assets/lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/lib/bootstrap/bootstrap-icons.min.css">
+  <script src="./assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/theme.js"></script>
+
   <style>
     body {
-      background: #f6f8fa;
+      min-height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+    }
+
+    .contato-container {
+      flex: 1;
+      display: flex;
       align-items: center;
-      height: 100vh;
-      margin: 0;
+      justify-content: center;
+      padding: 30px 15px;
     }
 
-    .content {
-      width: 100%;
+    .contato-card {
+      background-color: var(--bg-card-primary);
+      border-radius: 15px;
+      padding: 50px 40px;
       max-width: 600px;
-      text-align: center;
-    }
-
-    a.button {
       width: 100%;
-      font-size: 1.3em;
-      margin-bottom: 1em;
-      border-radius: 10px !important;
-      padding: 20px !important;
     }
 
-    .ui.icon {
-      margin-right: 0.5em;
+    .contato-header h1 {
+      color: var(--fg-primary);
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
     }
 
-    .vertical {
-      gap: 30px;
-      width: 100%;
-      max-width: 300px;
-      margin-top: 20px !important;
-    }
-
-    p {
-      max-width: 300px;
-      margin: 10px auto;
-      word-wrap: break-word;
+    .contato-description {
+      color: var(--fg-primary);
       font-size: 1.1rem;
+      margin-bottom: 40px;
+      opacity: 0.9;
+    }
+
+    .social-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 18px 25px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background-color: var(--bg-card-secondary);
+      color: var(--fg-primary);
+      text-decoration: none;
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .social-button:hover {
+      background-color: var(--bg-card-primary);
+      color: var(--fg-primary-hv);
+      border-color: var(--fg-primary-hv);
+      transform: translateY(-2px);
+    }
+
+    .social-button i {
+      font-size: 1.3rem;
+    }
+
+    .navbar-header {
+      background-color: var(--bg-card-primary);
+      border-radius: 15px;
+      padding: 20px 30px;
+      margin: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .contato-card {
+        padding: 40px 25px;
+      }
+
+      .contato-header h1 {
+        font-size: 2rem;
+      }
+
+      .social-button {
+        font-size: 1rem;
+        padding: 15px 20px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="content">
-    <h2 class="ui header">Paulo Santos</h2>
-    <p>Desenvolvedor FullStack apaixonado por tecnologia, com especialização em PHP e C# </p>
+  <header class="navbar-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="header-content">
+        <div class="logo">
+          <span class="name-first">PAULO</span>
+          <span class="name-last">SANTOS</span>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="./">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./projetos">PROJETOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contato">CONTATO</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/paulowh/paulowh/wiki">WIKI</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <div id="social-buttons" class="ui vertical buttons">
-      <!-- Buttons will be injected from data/socials.json by js/socials.js -->
+  <div class="contato-container">
+    <div class="contato-card">
+      <div class="contato-header text-center">
+        <h1>Paulo Santos</h1>
+        <p class="contato-description">Desenvolvedor FullStack apaixonado por tecnologia, com especialização em PHP e C#
+        </p>
+      </div>
+
+      <div id="social-buttons">
+        <!-- Buttons will be injected from data/socials.json by js/socials.js -->
+      </div>
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   <script src="assets/js/socials.js"></script>
 </body>
 

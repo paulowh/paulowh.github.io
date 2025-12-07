@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   container.setAttribute('role', 'region');
   container.setAttribute('aria-live', 'polite');
   container.setAttribute('aria-busy', 'true');
-  container.innerHTML = '<div class="loader-row"><div class="ui active inline loader" aria-hidden="true"></div><span class="loader-text">Carregando...</span></div>';
+  container.innerHTML = '<div class="text-center"><div class="spinner-border" role="status"><span class="visually-hidden">Carregando...</span></div></div>';
 
   fetch('assets/data/socials.json')
     .then(function (res) {
@@ -22,8 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       container.innerHTML = '';
       socials.forEach(function (s, idx) {
         const a = document.createElement('a');
-        const color = s.colorClass || 'black';
-        a.className = 'ui fluid ' + color + ' button';
+        a.className = 'social-button';
         a.href = s.url;
         a.target = s.target || '_blank';
         a.rel = 'noopener noreferrer';
@@ -32,23 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
         a.setAttribute('tabindex', '0');
 
         const icon = document.createElement('i');
-        icon.className = (s.icon || '') + ' icon';
+        
+        icon.className = 'bi ' + 'bi-' + (s.icon || 'link-45deg');
         a.appendChild(icon);
 
         const span = document.createElement('span');
-        span.textContent = ' ' + (s.label || '');
+        span.textContent = s.label || '';
         a.appendChild(span);
 
-        // enter with a small fade/translate animation
-        a.style.opacity = '0';
-        a.style.transform = 'translateY(6px)';
-        a.style.transition = 'opacity 220ms ease, transform 200ms ease';
-
         container.appendChild(a);
-        setTimeout(function () {
-          a.style.opacity = '1';
-          a.style.transform = 'translateY(0)';
-        }, 60 + idx * 70);
       });
     })
     .catch(function (err) {
