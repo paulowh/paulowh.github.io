@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-10T00:12:29.450Z",
+  "generated_at": "2025-12-10T22:42:31.035Z",
   "repos": [
     {
       "name": "campo-minado",
@@ -93,7 +93,7 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2025-12-09T00:12:14Z"
+      "updated_at": "2025-12-10T00:12:35Z"
     },
     {
       "name": "petshop-react",
@@ -111,18 +111,17 @@
     },
     {
       "name": "pokeapi",
-      "description": null,
+      "description": "Uma aplicação web moderna e interativa para explorar o universo Pokémon, construída com React JS e integração com a PokéAPI.",
       "html_url": "https://github.com/paulowh/pokeapi",
       "languages_url": "https://api.github.com/repos/paulowh/pokeapi/languages",
-      "language": "Twig",
+      "language": "JavaScript",
       "stargazers_count": 1,
       "languages": [
-        "Twig",
-        "PHP",
         "JavaScript",
-        "CSS"
+        "CSS",
+        "HTML"
       ],
-      "updated_at": "2025-09-03T14:42:55Z"
+      "updated_at": "2025-12-10T19:41:44Z"
     },
     {
       "name": "police-box",
