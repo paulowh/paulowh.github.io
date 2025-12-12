@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-11T00:12:40.591Z",
+  "generated_at": "2025-12-12T00:12:39.177Z",
   "repos": [
     {
       "name": "campo-minado",
@@ -93,7 +93,7 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2025-12-10T22:42:37Z"
+      "updated_at": "2025-12-11T00:12:46Z"
     },
     {
       "name": "petshop-react",
@@ -115,13 +115,13 @@
       "html_url": "https://github.com/paulowh/pokeapi",
       "languages_url": "https://api.github.com/repos/paulowh/pokeapi/languages",
       "language": "JavaScript",
-      "stargazers_count": 1,
+      "stargazers_count": 2,
       "languages": [
         "JavaScript",
         "CSS",
         "HTML"
       ],
-      "updated_at": "2025-12-10T19:41:44Z"
+      "updated_at": "2025-12-11T21:54:50Z"
     },
     {
       "name": "police-box",
