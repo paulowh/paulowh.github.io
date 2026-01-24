@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-01-23T00:13:29.314Z",
+  "generated_at": "2026-01-24T00:12:39.736Z",
   "repos": [
+    {
+      "name": "board-game-azul",
+      "description": "projeto de replica do board game azul para terminal utilizando python",
+      "html_url": "https://github.com/paulowh/board-game-azul",
+      "languages_url": "https://api.github.com/repos/paulowh/board-game-azul/languages",
+      "language": null,
+      "stargazers_count": 0,
+      "languages": [],
+      "updated_at": "2026-01-23T23:55:03Z"
+    },
     {
       "name": "campo-minado",
       "description": "Projeto feito totalmente em Python, com o objetivo de simular um campo do jogo 'campo minado' salvado os dados em um Excel para simular um banco de dados",
@@ -93,7 +103,7 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2026-01-22T00:13:54Z"
+      "updated_at": "2026-01-23T00:13:34Z"
     },
     {
       "name": "petshop-react",
