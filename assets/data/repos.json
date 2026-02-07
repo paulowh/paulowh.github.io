@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-06T00:14:22.235Z",
+  "generated_at": "2026-02-07T00:15:41.823Z",
   "repos": [
     {
       "name": "board-game-azul",
@@ -105,7 +105,7 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2026-02-05T00:16:56Z"
+      "updated_at": "2026-02-06T00:14:30Z"
     },
     {
       "name": "petshop-react",
@@ -127,13 +127,13 @@
       "html_url": "https://github.com/paulowh/pokeapi",
       "languages_url": "https://api.github.com/repos/paulowh/pokeapi/languages",
       "language": "JavaScript",
-      "stargazers_count": 2,
+      "stargazers_count": 3,
       "languages": [
         "JavaScript",
         "CSS",
         "HTML"
       ],
-      "updated_at": "2025-12-11T21:54:50Z"
+      "updated_at": "2026-02-06T04:06:22Z"
     },
     {
       "name": "pokegame-angular",
