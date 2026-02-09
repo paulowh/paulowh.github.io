@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-08T00:21:10.890Z",
+  "generated_at": "2026-02-09T00:17:06.396Z",
   "repos": [
     {
       "name": "board-game-azul",
@@ -40,19 +40,14 @@
       "updated_at": "2024-09-02T13:44:58Z"
     },
     {
-      "name": "DevBox",
+      "name": "devbox",
       "description": "DevBox é um hub pessoal de produtividade que reúne tarefas, notas, wiki e serviços modulares em um único sistema unificado.",
-      "html_url": "https://github.com/paulowh/DevBox",
-      "languages_url": "https://api.github.com/repos/paulowh/DevBox/languages",
-      "language": "PHP",
+      "html_url": "https://github.com/paulowh/devbox",
+      "languages_url": "https://api.github.com/repos/paulowh/devbox/languages",
+      "language": null,
       "stargazers_count": 0,
-      "languages": [
-        "PHP",
-        "Twig",
-        "CSS",
-        "JavaScript"
-      ],
-      "updated_at": "2025-11-24T20:50:26Z"
+      "languages": [],
+      "updated_at": "2026-02-08T10:47:33Z"
     },
     {
       "name": "exercicios-js-o-retorno",
@@ -105,7 +100,7 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2026-02-07T00:15:48Z"
+      "updated_at": "2026-02-08T00:21:17Z"
     },
     {
       "name": "petshop-react",
