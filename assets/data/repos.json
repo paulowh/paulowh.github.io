@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-09T00:17:06.700Z",
+  "generated_at": "2026-04-10T00:20:16.146Z",
   "repos": [
     {
       "name": "agenda-pokemon",
@@ -26,18 +26,6 @@
       "updated_at": "2026-03-12T01:23:37Z"
     },
     {
-      "name": "board-game-azul",
-      "description": "projeto de replica do board game azul para terminal utilizando python",
-      "html_url": "https://github.com/paulowh/board-game-azul",
-      "languages_url": "https://api.github.com/repos/paulowh/board-game-azul/languages",
-      "language": "Python",
-      "stargazers_count": 0,
-      "languages": [
-        "Python"
-      ],
-      "updated_at": "2026-01-25T03:24:48Z"
-    },
-    {
       "name": "campo-minado",
       "description": "Projeto feito totalmente em Python, com o objetivo de simular um campo do jogo 'campo minado' salvado os dados em um Excel para simular um banco de dados",
       "html_url": "https://github.com/paulowh/campo-minado",
@@ -62,16 +50,6 @@
         "CSS"
       ],
       "updated_at": "2024-09-02T13:44:58Z"
-    },
-    {
-      "name": "devbox",
-      "description": "DevBox é um hub pessoal de produtividade que reúne tarefas, notas, wiki e serviços modulares em um único sistema unificado.",
-      "html_url": "https://github.com/paulowh/devbox",
-      "languages_url": "https://api.github.com/repos/paulowh/devbox/languages",
-      "language": null,
-      "stargazers_count": 0,
-      "languages": [],
-      "updated_at": "2026-02-08T10:47:33Z"
     },
     {
       "name": "exercicios-js-o-retorno",
@@ -103,16 +81,6 @@
       "updated_at": "2023-10-10T22:53:12Z"
     },
     {
-      "name": "markdown",
-      "description": null,
-      "html_url": "https://github.com/paulowh/markdown",
-      "languages_url": "https://api.github.com/repos/paulowh/markdown/languages",
-      "language": null,
-      "stargazers_count": 0,
-      "languages": [],
-      "updated_at": "2026-03-27T01:05:43Z"
-    },
-    {
       "name": "paulowh",
       "description": null,
       "html_url": "https://github.com/paulowh/paulowh",
@@ -134,7 +102,7 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2026-04-08T00:21:20Z"
+      "updated_at": "2026-04-09T00:17:17Z"
     },
     {
       "name": "petshop-react",
@@ -163,21 +131,6 @@
         "HTML"
       ],
       "updated_at": "2026-02-06T04:06:22Z"
-    },
-    {
-      "name": "pokegame-angular",
-      "description": "My First App in Angular - POKEGAME",
-      "html_url": "https://github.com/paulowh/pokegame-angular",
-      "languages_url": "https://api.github.com/repos/paulowh/pokegame-angular/languages",
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "languages": [
-        "TypeScript",
-        "HTML",
-        "Nix",
-        "CSS"
-      ],
-      "updated_at": "2026-02-04T01:30:02Z"
     },
     {
       "name": "police-box",
@@ -280,18 +233,6 @@
         "CSS"
       ],
       "updated_at": "2025-12-04T18:05:05Z"
-    },
-    {
-      "name": "viacep",
-      "description": null,
-      "html_url": "https://github.com/paulowh/viacep",
-      "languages_url": "https://api.github.com/repos/paulowh/viacep/languages",
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "languages": [
-        "JavaScript"
-      ],
-      "updated_at": "2026-03-10T01:26:45Z"
     }
   ]
 }
