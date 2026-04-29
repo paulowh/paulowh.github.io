@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T00:28:32.762Z",
+  "generated_at": "2026-04-29T00:29:38.245Z",
   "repos": [
     {
       "name": "agenda-pokemon",
@@ -102,7 +102,7 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2026-04-27T00:25:23Z"
+      "updated_at": "2026-04-28T00:28:40Z"
     },
     {
       "name": "petshop-react",
@@ -233,6 +233,18 @@
         "CSS"
       ],
       "updated_at": "2025-12-04T18:05:05Z"
+    },
+    {
+      "name": "trucoLadrao",
+      "description": null,
+      "html_url": "https://github.com/paulowh/trucoLadrao",
+      "languages_url": "https://api.github.com/repos/paulowh/trucoLadrao/languages",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "languages": [
+        "TypeScript"
+      ],
+      "updated_at": "2026-04-28T01:35:09Z"
     },
     {
       "name": "ZombieGames",
