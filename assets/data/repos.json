@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T00:33:40.464Z",
+  "generated_at": "2026-05-27T00:35:25.635Z",
   "repos": [
     {
       "name": "agenda-pokemon",
@@ -105,6 +105,18 @@
       "updated_at": "2026-05-14T01:32:06Z"
     },
     {
+      "name": "navigation",
+      "description": null,
+      "html_url": "https://github.com/paulowh/navigation",
+      "languages_url": "https://api.github.com/repos/paulowh/navigation/languages",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "languages": [
+        "TypeScript"
+      ],
+      "updated_at": "2026-05-27T00:31:17Z"
+    },
+    {
       "name": "paulowh",
       "description": null,
       "html_url": "https://github.com/paulowh/paulowh",
@@ -126,7 +138,7 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2026-05-25T00:34:49Z"
+      "updated_at": "2026-05-26T00:33:48Z"
     },
     {
       "name": "petshop-react",
