@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T01:59:53.854Z",
+  "generated_at": "2026-07-25T01:59:43.617Z",
   "repos": [
     {
       "name": "agenda-pokemon",
@@ -117,6 +117,22 @@
       "updated_at": "2026-05-14T01:32:06Z"
     },
     {
+      "name": "magic-home-desktop",
+      "description": "Desktop app for Windows and MacOS to control Magic Home LEDs.",
+      "html_url": "https://github.com/paulowh/magic-home-desktop",
+      "languages_url": "https://api.github.com/repos/paulowh/magic-home-desktop/languages",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "languages": [
+        "TypeScript",
+        "Vue",
+        "JavaScript",
+        "HTML",
+        "Shell"
+      ],
+      "updated_at": "2026-07-24T04:00:42Z"
+    },
+    {
       "name": "navigation",
       "description": null,
       "html_url": "https://github.com/paulowh/navigation",
@@ -150,7 +166,7 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2026-07-23T02:05:07Z"
+      "updated_at": "2026-07-24T02:00:03Z"
     },
     {
       "name": "petshop-react",
