@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T01:52:38.474Z",
+  "generated_at": "2026-07-29T01:55:15.468Z",
   "repos": [
     {
       "name": "agenda-pokemon",
@@ -145,6 +145,18 @@
       "updated_at": "2026-05-27T00:31:17Z"
     },
     {
+      "name": "notificacoes-expo",
+      "description": "projeto para demonstração de notificações e sistema de vibra",
+      "html_url": "https://github.com/paulowh/notificacoes-expo",
+      "languages_url": "https://api.github.com/repos/paulowh/notificacoes-expo/languages",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "languages": [
+        "TypeScript"
+      ],
+      "updated_at": "2026-07-28T22:25:28Z"
+    },
+    {
       "name": "paulowh",
       "description": null,
       "html_url": "https://github.com/paulowh/paulowh",
@@ -166,7 +178,7 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2026-07-27T02:11:31Z"
+      "updated_at": "2026-07-28T01:52:46Z"
     },
     {
       "name": "petshop-react",
