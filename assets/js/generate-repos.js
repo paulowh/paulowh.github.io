@@ -4,7 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const OWNER = 'paulowh';
+const OWNER = 'paulocafee';
 // __dirname é assets/js -> subir um nível e usar /data
 const OUT_DIR = path.resolve(__dirname, '..', 'data');
 const OUT_FILE = path.join(OUT_DIR, 'repos.json');
