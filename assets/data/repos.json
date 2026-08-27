@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-25T00:50:51.437Z",
+  "generated_at": "2026-08-27T06:30:43.718Z",
   "repos": [
     {
       "name": "agenda-pokemon",
       "description": null,
-      "html_url": "https://github.com/paulowh/agenda-pokemon",
-      "languages_url": "https://api.github.com/repos/paulowh/agenda-pokemon/languages",
+      "html_url": "https://github.com/paulocafee/agenda-pokemon",
+      "languages_url": "https://api.github.com/repos/paulocafee/agenda-pokemon/languages",
       "language": "C#",
       "stargazers_count": 0,
       "languages": [
@@ -16,8 +16,8 @@
     {
       "name": "Atividade01",
       "description": null,
-      "html_url": "https://github.com/paulowh/Atividade01",
-      "languages_url": "https://api.github.com/repos/paulowh/Atividade01/languages",
+      "html_url": "https://github.com/paulocafee/Atividade01",
+      "languages_url": "https://api.github.com/repos/paulocafee/Atividade01/languages",
       "language": "C#",
       "stargazers_count": 0,
       "languages": [
@@ -28,8 +28,8 @@
     {
       "name": "banco_csharp",
       "description": null,
-      "html_url": "https://github.com/paulowh/banco_csharp",
-      "languages_url": "https://api.github.com/repos/paulowh/banco_csharp/languages",
+      "html_url": "https://github.com/paulocafee/banco_csharp",
+      "languages_url": "https://api.github.com/repos/paulocafee/banco_csharp/languages",
       "language": "C#",
       "stargazers_count": 0,
       "languages": [
@@ -40,8 +40,8 @@
     {
       "name": "BoxCoin",
       "description": null,
-      "html_url": "https://github.com/paulowh/BoxCoin",
-      "languages_url": "https://api.github.com/repos/paulowh/BoxCoin/languages",
+      "html_url": "https://github.com/paulocafee/BoxCoin",
+      "languages_url": "https://api.github.com/repos/paulocafee/BoxCoin/languages",
       "language": "TypeScript",
       "stargazers_count": 0,
       "languages": [
@@ -52,8 +52,8 @@
     {
       "name": "campo-minado",
       "description": "Projeto feito totalmente em Python, com o objetivo de simular um campo do jogo 'campo minado' salvado os dados em um Excel para simular um banco de dados",
-      "html_url": "https://github.com/paulowh/campo-minado",
-      "languages_url": "https://api.github.com/repos/paulowh/campo-minado/languages",
+      "html_url": "https://github.com/paulocafee/campo-minado",
+      "languages_url": "https://api.github.com/repos/paulocafee/campo-minado/languages",
       "language": "Python",
       "stargazers_count": 0,
       "languages": [
@@ -64,8 +64,8 @@
     {
       "name": "comex",
       "description": null,
-      "html_url": "https://github.com/paulowh/comex",
-      "languages_url": "https://api.github.com/repos/paulowh/comex/languages",
+      "html_url": "https://github.com/paulocafee/comex",
+      "languages_url": "https://api.github.com/repos/paulocafee/comex/languages",
       "language": "Java",
       "stargazers_count": 0,
       "languages": [
@@ -76,23 +76,10 @@
       "updated_at": "2024-09-02T13:44:58Z"
     },
     {
-      "name": "exercicios-js-o-retorno",
-      "description": null,
-      "html_url": "https://github.com/paulowh/exercicios-js-o-retorno",
-      "languages_url": "https://api.github.com/repos/paulowh/exercicios-js-o-retorno/languages",
-      "language": "HTML",
-      "stargazers_count": 0,
-      "languages": [
-        "HTML",
-        "JavaScript"
-      ],
-      "updated_at": "2025-09-17T01:30:55Z"
-    },
-    {
       "name": "gerenciador-de-aulas",
       "description": "projeto integrador da UC 12",
-      "html_url": "https://github.com/paulowh/gerenciador-de-aulas",
-      "languages_url": "https://api.github.com/repos/paulowh/gerenciador-de-aulas/languages",
+      "html_url": "https://github.com/paulocafee/gerenciador-de-aulas",
+      "languages_url": "https://api.github.com/repos/paulocafee/gerenciador-de-aulas/languages",
       "language": "PHP",
       "stargazers_count": 0,
       "languages": [
@@ -107,20 +94,20 @@
     {
       "name": "improved-octo-carnival",
       "description": "um projeto ai",
-      "html_url": "https://github.com/paulowh/improved-octo-carnival",
-      "languages_url": "https://api.github.com/repos/paulowh/improved-octo-carnival/languages",
+      "html_url": "https://github.com/paulocafee/improved-octo-carnival",
+      "languages_url": "https://api.github.com/repos/paulocafee/improved-octo-carnival/languages",
       "language": "TypeScript",
       "stargazers_count": 0,
       "languages": [
         "TypeScript"
       ],
-      "updated_at": "2026-08-25T00:40:02Z"
+      "updated_at": "2026-08-25T19:41:37Z"
     },
     {
       "name": "lista-compras",
       "description": null,
-      "html_url": "https://github.com/paulowh/lista-compras",
-      "languages_url": "https://api.github.com/repos/paulowh/lista-compras/languages",
+      "html_url": "https://github.com/paulocafee/lista-compras",
+      "languages_url": "https://api.github.com/repos/paulocafee/lista-compras/languages",
       "language": "TypeScript",
       "stargazers_count": 0,
       "languages": [
@@ -131,8 +118,8 @@
     {
       "name": "magic-home-desktop",
       "description": "Desktop app for Windows and MacOS to control Magic Home LEDs.",
-      "html_url": "https://github.com/paulowh/magic-home-desktop",
-      "languages_url": "https://api.github.com/repos/paulowh/magic-home-desktop/languages",
+      "html_url": "https://github.com/paulocafee/magic-home-desktop",
+      "languages_url": "https://api.github.com/repos/paulocafee/magic-home-desktop/languages",
       "language": "TypeScript",
       "stargazers_count": 0,
       "languages": [
@@ -147,8 +134,8 @@
     {
       "name": "navigation",
       "description": null,
-      "html_url": "https://github.com/paulowh/navigation",
-      "languages_url": "https://api.github.com/repos/paulowh/navigation/languages",
+      "html_url": "https://github.com/paulocafee/navigation",
+      "languages_url": "https://api.github.com/repos/paulocafee/navigation/languages",
       "language": "TypeScript",
       "stargazers_count": 0,
       "languages": [
@@ -159,8 +146,8 @@
     {
       "name": "notificacoes-expo",
       "description": "projeto para demonstração de notificações e sistema de vibra",
-      "html_url": "https://github.com/paulowh/notificacoes-expo",
-      "languages_url": "https://api.github.com/repos/paulowh/notificacoes-expo/languages",
+      "html_url": "https://github.com/paulocafee/notificacoes-expo",
+      "languages_url": "https://api.github.com/repos/paulocafee/notificacoes-expo/languages",
       "language": "TypeScript",
       "stargazers_count": 0,
       "languages": [
@@ -169,20 +156,20 @@
       "updated_at": "2026-07-29T22:14:45Z"
     },
     {
-      "name": "paulowh",
+      "name": "paulocafee",
       "description": null,
-      "html_url": "https://github.com/paulowh/paulowh",
-      "languages_url": "https://api.github.com/repos/paulowh/paulowh/languages",
+      "html_url": "https://github.com/paulocafee/paulocafee",
+      "languages_url": "https://api.github.com/repos/paulocafee/paulocafee/languages",
       "language": null,
       "stargazers_count": 4,
       "languages": [],
-      "updated_at": "2025-10-10T00:29:30Z"
+      "updated_at": "2026-08-26T23:22:48Z"
     },
     {
-      "name": "paulowh.github.io",
+      "name": "paulocafee.github.io",
       "description": null,
-      "html_url": "https://github.com/paulowh/paulowh.github.io",
-      "languages_url": "https://api.github.com/repos/paulowh/paulowh.github.io/languages",
+      "html_url": "https://github.com/paulocafee/paulocafee.github.io",
+      "languages_url": "https://api.github.com/repos/paulocafee/paulocafee.github.io/languages",
       "language": "CSS",
       "stargazers_count": 11,
       "languages": [
@@ -190,13 +177,13 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2026-08-24T00:51:15Z"
+      "updated_at": "2026-08-26T22:30:20Z"
     },
     {
       "name": "petshop-react",
       "description": "Repositório feito para o acompanhamento das aulas de React JS",
-      "html_url": "https://github.com/paulowh/petshop-react",
-      "languages_url": "https://api.github.com/repos/paulowh/petshop-react/languages",
+      "html_url": "https://github.com/paulocafee/petshop-react",
+      "languages_url": "https://api.github.com/repos/paulocafee/petshop-react/languages",
       "language": "JavaScript",
       "stargazers_count": 0,
       "languages": [
@@ -209,8 +196,8 @@
     {
       "name": "pokeapi",
       "description": "Uma aplicação web moderna e interativa para explorar o universo Pokémon, construída com React JS e integração com a PokéAPI.",
-      "html_url": "https://github.com/paulowh/pokeapi",
-      "languages_url": "https://api.github.com/repos/paulowh/pokeapi/languages",
+      "html_url": "https://github.com/paulocafee/pokeapi",
+      "languages_url": "https://api.github.com/repos/paulocafee/pokeapi/languages",
       "language": "JavaScript",
       "stargazers_count": 3,
       "languages": [
@@ -223,8 +210,8 @@
     {
       "name": "police-box",
       "description": "Modelo de projeto, marketplace de venda de jogos digitais ",
-      "html_url": "https://github.com/paulowh/police-box",
-      "languages_url": "https://api.github.com/repos/paulowh/police-box/languages",
+      "html_url": "https://github.com/paulocafee/police-box",
+      "languages_url": "https://api.github.com/repos/paulocafee/police-box/languages",
       "language": "PHP",
       "stargazers_count": 0,
       "languages": [
@@ -237,10 +224,24 @@
       "updated_at": "2025-12-05T22:17:01Z"
     },
     {
+      "name": "portfolio-web",
+      "description": null,
+      "html_url": "https://github.com/paulocafee/portfolio-web",
+      "languages_url": "https://api.github.com/repos/paulocafee/portfolio-web/languages",
+      "language": "CSS",
+      "stargazers_count": 0,
+      "languages": [
+        "CSS",
+        "TypeScript",
+        "HTML"
+      ],
+      "updated_at": "2026-08-27T05:21:33Z"
+    },
+    {
       "name": "project_atena",
       "description": null,
-      "html_url": "https://github.com/paulowh/project_atena",
-      "languages_url": "https://api.github.com/repos/paulowh/project_atena/languages",
+      "html_url": "https://github.com/paulocafee/project_atena",
+      "languages_url": "https://api.github.com/repos/paulocafee/project_atena/languages",
       "language": "Python",
       "stargazers_count": 0,
       "languages": [
@@ -251,8 +252,8 @@
     {
       "name": "revisao",
       "description": null,
-      "html_url": "https://github.com/paulowh/revisao",
-      "languages_url": "https://api.github.com/repos/paulowh/revisao/languages",
+      "html_url": "https://github.com/paulocafee/revisao",
+      "languages_url": "https://api.github.com/repos/paulocafee/revisao/languages",
       "language": "TypeScript",
       "stargazers_count": 0,
       "languages": [
@@ -263,8 +264,8 @@
     {
       "name": "sistema-criptografia",
       "description": "Sistema com o objetivo de codificar uma mensagem",
-      "html_url": "https://github.com/paulowh/sistema-criptografia",
-      "languages_url": "https://api.github.com/repos/paulowh/sistema-criptografia/languages",
+      "html_url": "https://github.com/paulocafee/sistema-criptografia",
+      "languages_url": "https://api.github.com/repos/paulocafee/sistema-criptografia/languages",
       "language": "Python",
       "stargazers_count": 0,
       "languages": [
@@ -275,8 +276,8 @@
     {
       "name": "TI21",
       "description": "Repositório feito para a UC 15 da turma TI21",
-      "html_url": "https://github.com/paulowh/TI21",
-      "languages_url": "https://api.github.com/repos/paulowh/TI21/languages",
+      "html_url": "https://github.com/paulocafee/TI21",
+      "languages_url": "https://api.github.com/repos/paulocafee/TI21/languages",
       "language": "C#",
       "stargazers_count": 6,
       "languages": [
@@ -293,8 +294,8 @@
     {
       "name": "TI24",
       "description": null,
-      "html_url": "https://github.com/paulowh/TI24",
-      "languages_url": "https://api.github.com/repos/paulowh/TI24/languages",
+      "html_url": "https://github.com/paulocafee/TI24",
+      "languages_url": "https://api.github.com/repos/paulocafee/TI24/languages",
       "language": "PHP",
       "stargazers_count": 19,
       "languages": [
@@ -307,38 +308,10 @@
       "updated_at": "2025-04-07T13:55:56Z"
     },
     {
-      "name": "TI26",
-      "description": "repositório das aulas da turma técnico em informática ti26",
-      "html_url": "https://github.com/paulowh/TI26",
-      "languages_url": "https://api.github.com/repos/paulowh/TI26/languages",
-      "language": "HTML",
-      "stargazers_count": 1,
-      "languages": [
-        "HTML",
-        "PHP",
-        "CSS",
-        "Hack"
-      ],
-      "updated_at": "2025-10-10T00:29:41Z"
-    },
-    {
-      "name": "TI27",
-      "description": "repositório para compartilhar arquivos de aula com a turma",
-      "html_url": "https://github.com/paulowh/TI27",
-      "languages_url": "https://api.github.com/repos/paulowh/TI27/languages",
-      "language": "HTML",
-      "stargazers_count": 0,
-      "languages": [
-        "HTML",
-        "CSS"
-      ],
-      "updated_at": "2025-12-04T18:05:05Z"
-    },
-    {
       "name": "trucoLadrao",
       "description": null,
-      "html_url": "https://github.com/paulowh/trucoLadrao",
-      "languages_url": "https://api.github.com/repos/paulowh/trucoLadrao/languages",
+      "html_url": "https://github.com/paulocafee/trucoLadrao",
+      "languages_url": "https://api.github.com/repos/paulocafee/trucoLadrao/languages",
       "language": "TypeScript",
       "stargazers_count": 0,
       "languages": [
@@ -349,8 +322,8 @@
     {
       "name": "ZombieGames",
       "description": null,
-      "html_url": "https://github.com/paulowh/ZombieGames",
-      "languages_url": "https://api.github.com/repos/paulowh/ZombieGames/languages",
+      "html_url": "https://github.com/paulocafee/ZombieGames",
+      "languages_url": "https://api.github.com/repos/paulocafee/ZombieGames/languages",
       "language": "C#",
       "stargazers_count": 0,
       "languages": [
