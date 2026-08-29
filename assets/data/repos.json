@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T08:21:17.434Z",
+  "generated_at": "2026-08-29T05:02:15.398Z",
   "repos": [
     {
       "name": "agenda-pokemon",
@@ -161,9 +161,9 @@
       "html_url": "https://github.com/paulocafee/paulocafee",
       "languages_url": "https://api.github.com/repos/paulocafee/paulocafee/languages",
       "language": null,
-      "stargazers_count": 4,
+      "stargazers_count": 0,
       "languages": [],
-      "updated_at": "2026-08-26T23:22:48Z"
+      "updated_at": "2026-08-28T14:33:45Z"
     },
     {
       "name": "paulocafee.github.io",
@@ -177,7 +177,17 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2026-08-27T06:32:25Z"
+      "updated_at": "2026-08-28T12:11:20Z"
+    },
+    {
+      "name": "paulocafee2",
+      "description": null,
+      "html_url": "https://github.com/paulocafee/paulocafee2",
+      "languages_url": "https://api.github.com/repos/paulocafee/paulocafee2/languages",
+      "language": null,
+      "stargazers_count": 4,
+      "languages": [],
+      "updated_at": "2026-08-28T12:11:36Z"
     },
     {
       "name": "petshop-react",
