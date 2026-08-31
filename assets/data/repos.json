@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T02:51:53.946Z",
+  "generated_at": "2026-08-31T02:45:01.339Z",
   "repos": [
     {
       "name": "agenda-pokemon",
@@ -74,6 +74,18 @@
         "CSS"
       ],
       "updated_at": "2024-09-02T13:44:58Z"
+    },
+    {
+      "name": "CRUDapp",
+      "description": null,
+      "html_url": "https://github.com/paulocafee/CRUDapp",
+      "languages_url": "https://api.github.com/repos/paulocafee/CRUDapp/languages",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "languages": [
+        "TypeScript"
+      ],
+      "updated_at": "2026-08-30T22:50:02Z"
     },
     {
       "name": "gerenciador-de-aulas",
@@ -177,7 +189,7 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2026-08-29T05:02:40Z"
+      "updated_at": "2026-08-30T02:52:03Z"
     },
     {
       "name": "paulocafee2",
