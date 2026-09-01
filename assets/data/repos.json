@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T02:45:01.339Z",
+  "generated_at": "2026-09-01T02:56:21.154Z",
   "repos": [
     {
       "name": "agenda-pokemon",
@@ -173,9 +173,9 @@
       "html_url": "https://github.com/paulocafee/paulocafee",
       "languages_url": "https://api.github.com/repos/paulocafee/paulocafee/languages",
       "language": null,
-      "stargazers_count": 0,
+      "stargazers_count": 4,
       "languages": [],
-      "updated_at": "2026-08-28T14:33:45Z"
+      "updated_at": "2026-08-31T04:32:19Z"
     },
     {
       "name": "paulocafee.github.io",
@@ -189,17 +189,7 @@
         "JavaScript",
         "HTML"
       ],
-      "updated_at": "2026-08-30T02:52:03Z"
-    },
-    {
-      "name": "paulocafee2",
-      "description": null,
-      "html_url": "https://github.com/paulocafee/paulocafee2",
-      "languages_url": "https://api.github.com/repos/paulocafee/paulocafee2/languages",
-      "language": null,
-      "stargazers_count": 4,
-      "languages": [],
-      "updated_at": "2026-08-28T12:11:36Z"
+      "updated_at": "2026-08-31T02:45:55Z"
     },
     {
       "name": "petshop-react",
@@ -294,6 +284,18 @@
         "Python"
       ],
       "updated_at": "2023-07-19T00:12:18Z"
+    },
+    {
+      "name": "supabase-t",
+      "description": null,
+      "html_url": "https://github.com/paulocafee/supabase-t",
+      "languages_url": "https://api.github.com/repos/paulocafee/supabase-t/languages",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "languages": [
+        "TypeScript"
+      ],
+      "updated_at": "2026-08-31T22:16:53Z"
     },
     {
       "name": "TI21",
